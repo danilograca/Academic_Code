@@ -1,0 +1,14 @@
+uint32 TLM_SBIT(void);
+bool TLM_TestFlash(void);
+bool TLM_TestRAM(void);
+bool TLM_TestTimers(void);
+bool TLM_TestInt(void);
+bool TLM_TestADC(void);
+bool TLM_TestCANControl1(void);
+bool TLM_TestCANControl2(void);
+bool TLM_TestCANSup(void);
+bool TLM_TestUART0(void);
+bool TLM_TestUART1(void);
+bool TLM_TestPLD(void);
+bool TLM_TestSSP(void);
+bool TLM_TestPower(void);

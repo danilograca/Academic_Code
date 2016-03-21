@@ -1,0 +1,1 @@
+.\sign.o: sign.c

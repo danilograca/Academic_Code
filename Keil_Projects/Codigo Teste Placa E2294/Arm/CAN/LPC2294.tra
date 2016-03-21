@@ -1,0 +1,26 @@
+*** Creating Trace Output File 'LPC2294.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"startup.o"'
+### List of Objects: adding '"global.o"'
+### List of Objects: adding '"main.o"'
+### List of Objects: adding '"init.o"'
+### List of Objects: adding '"irq.o"'
+### List of Objects: adding '"sign.o"'
+### List of Objects: adding '"serial.o"'
+### List of Objects: adding '"retarget.o"'
+### ADS-LD Command completed:
+--cpu ARM7TDMI "startup.o" "global.o" "main.o" "init.o" "irq.o" "sign.o" "serial.o" "retarget.o" --strict --scatter "LPC2294.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\LPC2294.map" -o "LPC2294.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'LPC2294.axf'
+### ADS-LD Command File: 'LPC2294.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'LPC2294.lnp', Handle=0x00000390
+### Writing '.lnp' file
+### ADS-LD Command file 'LPC2294.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.
