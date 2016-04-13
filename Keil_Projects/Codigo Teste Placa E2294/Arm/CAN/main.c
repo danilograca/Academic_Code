@@ -3,13 +3,11 @@
 #include <init.h> 
 #include <global.h>
 
-#include <LdraTest.h>
-
-    bool_t b_On;
-    bool_t b_Fail;
-    bool_t b_Panel;
-    bool_t b_Shutdown;
-    bool_t b_Maintenance;
+    unsigned int b_On;
+    unsigned int b_Fail;
+    unsigned int b_Panel;
+    unsigned int b_Shutdown;
+    unsigned int b_Maintenance;
     signed short sshort_Position;
     unsigned short ushort_Mode;
     unsigned short ushort_Power;
@@ -51,14 +49,11 @@ int main (void){
 		 
 	hardware_init();
 	
-	IO0CLR = 0x00000400;                          //Liga Backlight do LCD
-
-  	while (1){
-
-		//LdraTest();
+	//LdraTest();
 			
-		led();
-		
+	//led();
+	while(1){
+			
 		if (ushort_State == 9U) 
     {
         /*EMERGENCY STATE*/
@@ -192,40 +187,5 @@ int main (void){
             /*State MAINTENANCE*/       
         }
     }
-
-		if((flaggeral & 2) == 2){ 
-			flaggeral &= 0xFD;
-
-			while(!(C1SR & 0x00000004)){}						//Verifica se Buffer esta livre para transmitir
-				C1TFI1 = 0x00020000;					//ID 11 Bits
-				C1TID1 = 0x00000350;					//ID da mensagem
-				C1TDA1 = count;
-				C1CMR = 0x00000001;						//Transmite a mensagem	Self Reception
-							
-			while(!(C1SR & 0x00000004)){}						//Verifica se Buffer esta livre para transmitir
-				C1TFI1 = 0x00020000;					//ID 11 Bits
-				C1TID1 = 0x00000380;					//ID da mensagem
-				C1TDA1 = count;
-				C1CMR = 0x00000001;						//Transmite a mensagem	Self Reception
-							
-			while(!(C1SR & 0x00000004)){}						//Verifica se Buffer esta livre para transmitir
-				C1TFI1 = 0x00020000;					//ID 11 Bits
-				C1TID1 = 0x00000200;					//ID da mensagem
-				C1TDA1 = count;
-				C1CMR = 0x00000001;						//Transmite a mensagem	Self Reception
-				
-			while(!(C1SR & 0x00000004)){}						//Verifica se Buffer esta livre para transmitir
-				C1TFI1 = 0x00020000;					//ID 11 Bits
-				C1TID1 = 0x00000300;					//ID da mensagem
-				C1TDA1 = count;
-				C1CMR = 0x00000001;						//Transmite a mensagem	Self Reception
-							
-			while(!(C1SR & 0x00000004)){}						//Verifica se Buffer esta livre para transmitir
-				C1TFI1 = 0x00020000;					//ID 11 Bits
-				C1TID1 = 0x00000340;					//ID da mensagem
-				C1TDA1 = count;
-				C1CMR = 0x00000001;	
-				count++;
-		}
-	}	   
+	}
 }

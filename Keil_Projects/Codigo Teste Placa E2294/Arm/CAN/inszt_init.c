@@ -1,7 +1,7 @@
 /*
 C TESTBED VERSION  : 9.5.1
-FILE UNDER TEST  : "C:\_WorkSpace\Keil_Projects\Codigo Teste Placa E2294\Arm\CAN\init.c"
-DATE OF ANALYSIS : Mon Mar 21 17:00:30 2016
+FILE UNDER TEST  : "C:\_WorkSpace\Academic_Code\Keil_Projects\Codigo Teste Placa E2294\Arm\CAN\init.c"
+DATE OF ANALYSIS : Mon Apr 11 14:56:02 2016
 */
  
 #include <LPC22xx.H>
@@ -27,7 +27,7 @@ DATE OF ANALYSIS : Mon Mar 21 17:00:30 2016
 #undef QQNEWBS
 #define qqqMaxBranchDepth     20
 #undef QQQstructbitmap
- static int zzfileid =     45;
+ static int zzfileid =     49;
 #undef QQQALGONE
 #undef QQQVCLFLG
 #undef QQQFORKFL
@@ -52,9 +52,9 @@ DATE OF ANALYSIS : Mon Mar 21 17:00:30 2016
 #define QQQseparate
 extern int QQQindicator;
 static int QQQfirstmcdc=1;
-#define init_45zzopen                                                                                         zzopen
- extern int init_45zzopen                                                                                       ;
-#define init_45zqqzqz1                                                                                        zqqzqz1
+#define init_49zzopen                                                                                         zzopen
+ extern int init_49zzopen                                                                                       ;
+#define init_49zqqzqz1                                                                                        zqqzqz1
 #define QQQLDRA_PORT 
 #ifndef QQQLDRA_PORT                                                                                                                                                                                                                                                
 #define FILEPOINT FILE * f,                                                                                                                                                                                                                                         
@@ -364,13 +364,13 @@ void ldra_close (void) {
   static void qqoutput4(FILEPOINT char * s,int i,int j,int k,int l);                                                                                                                                                                                                
   static void qqoutput0(FILEPOINT char * s);                                                                                                                                                                                                                        
   static int swzzqqzz (int qqqi, int onoff);                                                                                                                                                                                                                        
-  extern int init_45zqqzqz(qqnull_params);                                                                                                                                                                                                                          
-  extern int init_45zqqzqz1(qqnull_params);                                                                                                                                                                                                                         
-  static int init_45zzqqzz (int qqqi);                                                                                                                                                                                                                              
-  static int init_45zqendz (int qqqi);                                                                                                                                                                                                                              
-  static int init_45zqzqzq (int qqqi);                                                                                                                                                                                                                              
-  static int init_45zzzqtz (int qqqa, int qqqb);                                                                                                                                                                                                                    
-  static int init_45zzzqfz (int qqqa, int qqqb);                                                                                                                                                                                                                    
+  extern int init_49zqqzqz(qqnull_params);                                                                                                                                                                                                                          
+  extern int init_49zqqzqz1(qqnull_params);                                                                                                                                                                                                                         
+  static int init_49zzqqzz (int qqqi);                                                                                                                                                                                                                              
+  static int init_49zqendz (int qqqi);                                                                                                                                                                                                                              
+  static int init_49zqzqzq (int qqqi);                                                                                                                                                                                                                              
+  static int init_49zzzqtz (int qqqa, int qqqb);                                                                                                                                                                                                                    
+  static int init_49zzzqfz (int qqqa, int qqqb);                                                                                                                                                                                                                    
   void qqqupload (qqnull_params);                                                                                                                                                                                                                                   
   void upload_execution_history(qqnull_params);                                                                                                                                                                                                                     
 /* ------------------------------ END OF TESTBED PROTOTYPES -------------------------------- */                                                                                                                                                                     
@@ -386,8 +386,8 @@ void ldra_close (void) {
 __irq void
   timer0 ( void )
   {
-   int iinit_45zzqqzz                                                                                       
- = init_45zzqqzz                                                                                        (       1 ) ; /* 37 */
+   int iinit_49zzqqzz                                                                                       
+ = init_49zzqqzz                                                                                        (       1 ) ; /* 37 */
     volatile static int
       t10ms = 0 ,
       t50ms = 0 ,
@@ -401,21 +401,21 @@ __irq void
       t10ms == 10
       )
  {
-    init_45zzqqzz                                                                                        (      2 ) ; /* 1 */
+    init_49zzqqzz                                                                                        (      2 ) ; /* 1 */
       {                  //Ocorre a cada 200us
          //flaggeral |= 2;
         t10ms = 0 ;
       }
  }                                                                                                   
 else                                                                                                
-  init_45zzqqzz                                                                                        (      3 ) ; /* 4 */
+  init_49zzqqzz                                                                                        (      3 ) ; /* 4 */
     t50ms ++ ;
     if
       (
       t50ms == 50
       )
  {
-    init_45zzqqzz                                                                                        (      4 ) ; /* 1 */
+    init_49zzqqzz                                                                                        (      4 ) ; /* 1 */
       {                  //Ocorre a cada 100ms
         flaggeral |= 4 ;
         flaggeral |= 2 ;
@@ -423,14 +423,14 @@ else
       }
  }                                                                                                   
 else                                                                                                
-  init_45zzqqzz                                                                                        (      5 ) ; /* 4 */
+  init_49zzqqzz                                                                                        (      5 ) ; /* 4 */
     t100ms ++ ;
     if
       (
       t100ms == 100
       )
  {
-    init_45zzqqzz                                                                                        (      6 ) ; /* 1 */
+    init_49zzqqzz                                                                                        (      6 ) ; /* 1 */
       {                    //Ocorre a cada 100ms
          //flaggeral |= 2;
         flaggeral |= 8 ;
@@ -439,14 +439,14 @@ else
       }
  }                                                                                                   
 else                                                                                                
-  init_45zzqqzz                                                                                        (      7 ) ; /* 4 */
+  init_49zzqqzz                                                                                        (      7 ) ; /* 4 */
     t1s ++ ;
     if
       (
       t1s == 1000
       )
  {
-    init_45zzqqzz                                                                                        (      8 ) ; /* 1 */
+    init_49zzqqzz                                                                                        (      8 ) ; /* 1 */
       {
          //flaggeral |= 2;
         flaggeral |= 0x10 ; //Seta a cada 1 segundo
@@ -454,10 +454,10 @@ else
       }
  }                                                                                                   
 else                                                                                                
-  init_45zzqqzz                                                                                        (      9 ) ; /* 4 */
+  init_49zzqqzz                                                                                        (      9 ) ; /* 4 */
     T0IR = 1 ;    // Clear interrupt flag
     VICVectAddr = 0 ;    // Acknowledge Interrupt ?
-    init_45zqendz                                                                                        (      10 ) ; /* 30 */  
+    init_49zqendz                                                                                        (      10 ) ; /* 30 */  
   }
 /******************************************************************************/
 /*       Interrupcao do ADC */
@@ -466,8 +466,8 @@ else
 __irq void
   ADC ( void )
   {
-   int iinit_45zzqqzz                                                                                       
- = init_45zzqqzz                                                                                        (      11 ) ; /* 37 */
+   int iinit_49zzqqzz                                                                                       
+ = init_49zzqqzz                                                                                        (      11 ) ; /* 37 */
 //      varAnalog[0]= ((ADDR0>>6) & 0x03FF); // Salva valores convertidos no buffer varAnalog[]
 //      varAnalog[1]= ((ADDR1>>6) & 0x03FF);
 //      varAnalog[2]= ((ADDR2>>6) & 0x03FF);
@@ -478,24 +478,24 @@ __irq void
 //      varAnalog[7]= ((ADDR7>>6) & 0x03FF);
     ADCR &= 0xFFFEFFFF ;    //Bit 21 PDN = Desabilita conversao do AD
     VICVectAddr = 0 ;    // Acknowledge Interrupt
-    init_45zqendz                                                                                        (      12 ) ; /* 30 */  
+    init_49zqendz                                                                                        (      12 ) ; /* 30 */  
   }
   /* Default Interrupt Function: may be called when timer ISR is disabled */
  
 __irq void
   DefISR ( void )
   {
-   int iinit_45zzqqzz                                                                                       
- = init_45zzqqzz                                                                                        (      13 ) ; /* 37 */
+   int iinit_49zzqqzz                                                                                       
+ = init_49zzqqzz                                                                                        (      13 ) ; /* 37 */
     ;
-    init_45zqendz                                                                                        (      14 ) ; /* 30 */  
+    init_49zqendz                                                                                        (      14 ) ; /* 30 */  
   }
  
 void
   init_irq ( void )
   {
-   int iinit_45zzqqzz                                                                                       
- = init_45zzqqzz                                                                                        (      15 ) ; /* 37 */
+   int iinit_49zzqqzz                                                                                       
+ = init_49zzqqzz                                                                                        (      15 ) ; /* 37 */
         //setup the timer counter 0 interrupt
         //PCLK = 60Mhz
         //periodo = 1/60Mhz = 16,66ns
@@ -524,7 +524,7 @@ void
     VICDefVectAddr = ( unsigned long ) DefISR ;  //un-assigned VIC interrupts
         //Habilita ou nao as interrupções
     VICIntEnable = 0x00000010 ;    //Habilita Interrupcao Timer0, externa e ADC
-    init_45zqendz                                                                                        (      16 ) ; /* 30 */  
+    init_49zqendz                                                                                        (      16 ) ; /* 30 */  
   }
 /******************************************************************************/
 /* inicializa os perifericos     */
@@ -533,12 +533,12 @@ void
 void
   hardware_init ( void )
   {
-   int iinit_45zzqqzz                                                                                       
- = init_45zzqqzz                                                                                        (      17 ) ; /* 37 */
+   int iinit_49zzqqzz                                                                                       
+ = init_49zzqqzz                                                                                        (      17 ) ; /* 37 */
         //setup IO module
     IO0DIR = 0x00000404 ;
     PINSEL0 |= 0x00058000 ;
- init_45zzqqzz                                                                                        (      18 ) ; /* 23 */
+ init_49zzqqzz                                                                                        (      18 ) ; /* 23 */
  
     init_irq ( ) ;  //Inicializa as interrupcoes
     PINSEL1 |= 0x00040000 ;    //P0.24 como TXCAN, P0.23 como RXCAN
@@ -546,7 +546,7 @@ void
     C1MOD = 0x00000001 ;    //Habilita a escrita no controlador CAN
     C1BTR = 0x00180004 ;
     C1MOD &= 0xFFFFFFFE ;    //Desabilita a escrita no controlador CAN
-    init_45zqendz                                                                                        (      19 ) ; /* 30 */  
+    init_49zqendz                                                                                        (      19 ) ; /* 30 */  
   }
 #define qqqbranches     19
 #define QQQMAXMCDCSIZE      2
@@ -582,8 +582,8 @@ void
   extern short qqzzglobbrns[QQQnumfil];                                                                                                                                                                                                                             
   extern short qqzzglobfileid[QQQnumfil];                                                                                                                                                                                                                           
   extern int qqupload_registered;                                                                                                                                                                                                                                   
-  extern int init_45zqqzqz(qqnull_params);                                                                                                                                                                                                                          
-  extern int init_45zqqzqz1(qqnull_params);                                                                                                                                                                                                                         
+  extern int init_49zqqzqz(qqnull_params);                                                                                                                                                                                                                          
+  extern int init_49zqqzqz1(qqnull_params);                                                                                                                                                                                                                         
     /* ----------------------------------------------------------------------* 179 *                                                                                                                                                                                
      *            Procedures                                                                                                                                                                                                                                        
      * -----------------------------------------------------------------------------                                                                                                                                                                                
@@ -592,7 +592,7 @@ void
    *        Returns an integer extracted from a string                                                                                                                                                                                                              
    * -----------------------------------------------------------------------------                                                                                                                                                                                  
    */                                                                                                                                                                                                                                                               
-  static int init_45zscanf(char * qqscan_str)                                                                                                                                                                                                                       
+  static int init_49zscanf(char * qqscan_str)                                                                                                                                                                                                                       
   {                                                                                                                                                                                                                                                                 
     int qqvalue;                                                                                                                                                                                                                                                    
     int qqisign;                                                                                                                                                                                                                                                    
@@ -732,16 +732,16 @@ void
    * the execution history file and returns unity.                                                                                                                                                                                                                  
    * This routine is the primary routine for gathering                                                                                                                                                                                                              
    * the execution history. Note that the last entry                                                                                                                                                                                                                
-   * is usually inserted by init_45zqzqzq.                                                                                                                                                                                                                          
+   * is usually inserted by init_49zqzqzq.                                                                                                                                                                                                                          
    * -----------------------------------------------------------------------------                                                                                                                                                                                  
    */                                                                                                                                                                                                                                                               
-  static int init_45zzqqzz(int qqqi)                                                                                                                                                                                                                                
+  static int init_49zzqqzz(int qqqi)                                                                                                                                                                                                                                
   {                                                                                                                                                                                                                                                                 
-    if ( init_45zzopen != 1 )                                                                                                                                                                                                                                       
+    if ( init_49zzopen != 1 )                                                                                                                                                                                                                                       
     {                                                                                                                                                                                                                                                               
-      init_45zqqzqz1();                                                                                                                                                                                                                                             
+      init_49zqqzqz1();                                                                                                                                                                                                                                             
     }                                                                                                                                                                                                                                                               
-    if ( init_45zzopen )                                                                                                                                                                                                                                            
+    if ( init_49zzopen )                                                                                                                                                                                                                                            
     {                                                                                                                                                                                                                                                               
       /* bitmap   */                                                                                                                                                                                                                                                
       if ( qqqi > 0 )                                                                                                                                                                                                                                               
@@ -766,11 +766,11 @@ void
    * module. It closes the execution history.                                                                                                                                                                                                                       
    * -----------------------------------------------------------------------------                                                                                                                                                                                  
    */                                                                                                                                                                                                                                                               
-static int init_45zqendz(int qqqi)                                                                                                                                                                                                                                  
+static int init_49zqendz(int qqqi)                                                                                                                                                                                                                                  
   {                                                                                                                                                                                                                                                                 
-      if ( init_45zzopen != 1 )                                                                                                                                                                                                                                     
+      if ( init_49zzopen != 1 )                                                                                                                                                                                                                                     
       {                                                                                                                                                                                                                                                             
-        init_45zqqzqz1();                                                                                                                                                                                                                                           
+        init_49zqqzqz1();                                                                                                                                                                                                                                           
       }                                                                                                                                                                                                                                                             
       /* ----------------------------------------------------------------------* 307 *                                                                                                                                                                              
        * this is the one which puts an integer into                                                                                                                                                                                                                 
@@ -779,7 +779,7 @@ static int init_45zqendz(int qqqi)
        * the number is right justified in this field.                                                                                                                                                                                                               
        * -----------------------------------------------------------------------------                                                                                                                                                                              
        */                                                                                                                                                                                                                                                           
-      if ( init_45zzopen )                                                                                                                                                                                                                                          
+      if ( init_49zzopen )                                                                                                                                                                                                                                          
       {                                                                                                                                                                                                                                                             
         /* uncompressed */                                                                                                                                                                                                                                          
         /* uncompressed unbuffered */                                                                                                                                                                                                                               
@@ -793,8 +793,8 @@ static int init_45zqendz(int qqqi)
         }                                                                                                                                                                                                                                                           
       }                                                                                                                                                                                                                                                             
     /* ----------------------------------------------------------------------* 310 *                                                                                                                                                                                
-     * fclose(init_45zzhfil);                                                                                                                                                                                                                                       
-     * init_45zzopen = 0;                                                                                                                                                                                                                                           
+     * fclose(init_49zzhfil);                                                                                                                                                                                                                                       
+     * init_49zzopen = 0;                                                                                                                                                                                                                                           
      * -----------------------------------------------------------------------------                                                                                                                                                                                
      */                                                                                                                                                                                                                                                             
     return(1);                                                                                                                                                                                                                                                      
@@ -807,24 +807,24 @@ static int init_45zqendz(int qqqi)
    * terminates. It closes the execution history                                                                                                                                                                                                                    
    * -----------------------------------------------------------------------------                                                                                                                                                                                  
    */                                                                                                                                                                                                                                                               
-  static int init_45zqzqzq(int qqqi)                                                                                                                                                                                                                                
+  static int init_49zqzqzq(int qqqi)                                                                                                                                                                                                                                
   {                                                                                                                                                                                                                                                                 
-      if ( init_45zzopen != 1 )                                                                                                                                                                                                                                     
+      if ( init_49zzopen != 1 )                                                                                                                                                                                                                                     
       {                                                                                                                                                                                                                                                             
-        init_45zqqzqz1();                                                                                                                                                                                                                                           
+        init_49zqqzqz1();                                                                                                                                                                                                                                           
       }                                                                                                                                                                                                                                                             
       /* not compressed */                                                                                                                                                                                                                                          
       /* do nothing for bitmap*/                                                                                                                                                                                                                                    
       /* upload the history */                                                                                                                                                                                                                                      
       /* bitmap */                                                                                                                                                                                                                                                  
       /* uncompressed  bitmap */                                                                                                                                                                                                                                    
-      init_45zqendz(qqqi);                                                                                                                                                                                                                                          
+      init_49zqendz(qqqi);                                                                                                                                                                                                                                          
         /* qqqupload closes the execution history file */                                                                                                                                                                                                           
     return(1);                                                                                                                                                                                                                                                      
   } /* end of zqzqzq */                                                                                                                                                                                                                                             
   /*   the following routines should be left alone */                                                                                                                                                                                                               
   /* ----------------------------------------------------------------------* 331 *                                                                                                                                                                                  
-   *            init_45zzzqtz                                                                                                                                                                                                                                       
+   *            init_49zzzqtz                                                                                                                                                                                                                                       
    * This routine captures the value of an expression                                                                                                                                                                                                               
    * and then returns a jump if the value is not 0.                                                                                                                                                                                                                 
    *                                                                                                                                                                                                                                                                
@@ -832,21 +832,21 @@ static int init_45zqendz(int qqqi)
    *   qqqb - jump table index.                                                                                                                                                                                                                                     
    * -----------------------------------------------------------------------------                                                                                                                                                                                  
    */                                                                                                                                                                                                                                                               
-  static int init_45zzzqtz(int qqqa, int qqqb)                                                                                                                                                                                                                      
+  static int init_49zzzqtz(int qqqa, int qqqb)                                                                                                                                                                                                                      
   {                                                                                                                                                                                                                                                                 
       if (qqqa)                                                                                                                                                                                                                                                     
       {                                                                                                                                                                                                                                                             
-        init_45zzqqzz(qqqb) ;                                                                                                                                                                                                                                       
+        init_49zzqqzz(qqqb) ;                                                                                                                                                                                                                                       
       }                                                                                                                                                                                                                                                             
       else                                                                                                                                                                                                                                                          
       {                                                                                                                                                                                                                                                             
         /* straight on jump */                                                                                                                                                                                                                                      
-        init_45zzqqzz(qqqb-1);                                                                                                                                                                                                                                      
+        init_49zzqqzz(qqqb-1);                                                                                                                                                                                                                                      
       }                                                                                                                                                                                                                                                             
     return(qqqa);                                                                                                                                                                                                                                                   
   } /* end of zzzqtz */                                                                                                                                                                                                                                             
   /* ----------------------------------------------------------------------* 332 *                                                                                                                                                                                  
-   *            init_45zzzqfz                                                                                                                                                                                                                                       
+   *            init_49zzzqfz                                                                                                                                                                                                                                       
    * This routine captures the value of an expression                                                                                                                                                                                                               
    * and then returns a jump if the value is 0.                                                                                                                                                                                                                     
    *                                                                                                                                                                                                                                                                
@@ -854,18 +854,18 @@ static int init_45zqendz(int qqqi)
    *  qqqb - jump table index.                                                                                                                                                                                                                                      
    * -----------------------------------------------------------------------------                                                                                                                                                                                  
    */                                                                                                                                                                                                                                                               
-  static int init_45zzzqfz(int qqqa,int qqqb)                                                                                                                                                                                                                       
+  static int init_49zzzqfz(int qqqa,int qqqb)                                                                                                                                                                                                                       
   {                                                                                                                                                                                                                                                                 
     {                                                                                                                                                                                                                                                               
       if (qqqa)                                                                                                                                                                                                                                                     
       {                                                                                                                                                                                                                                                             
         /* straight on jump */                                                                                                                                                                                                                                      
-        init_45zzqqzz(qqqb-1);                                                                                                                                                                                                                                      
+        init_49zzqqzz(qqqb-1);                                                                                                                                                                                                                                      
         return(qqqa);                                                                                                                                                                                                                                               
       }                                                                                                                                                                                                                                                             
       else                                                                                                                                                                                                                                                          
       {                                                                                                                                                                                                                                                             
-        init_45zzqqzz(qqqb);                                                                                                                                                                                                                                        
+        init_49zzqqzz(qqqb);                                                                                                                                                                                                                                        
       }                                                                                                                                                                                                                                                             
     }                                                                                                                                                                                                                                                               
     return(qqqa);                                                                                                                                                                                                                                                   
@@ -879,11 +879,11 @@ static int init_45zqendz(int qqqi)
   {                                                                                                                                                                                                                                                                 
   if ( qqqzzglobflag == 1 || onoff == 1)                                                                                                                                                                                                                            
   {                                                                                                                                                                                                                                                                 
-    if ( init_45zzopen != 1 )                                                                                                                                                                                                                                       
+    if ( init_49zzopen != 1 )                                                                                                                                                                                                                                       
     {                                                                                                                                                                                                                                                               
-      init_45zqqzqz1();                                                                                                                                                                                                                                             
+      init_49zqqzqz1();                                                                                                                                                                                                                                             
     }                                                                                                                                                                                                                                                               
-    if ( init_45zzopen )                                                                                                                                                                                                                                            
+    if ( init_49zzopen )                                                                                                                                                                                                                                            
     {                                                                                                                                                                                                                                                               
       if ( qqqi > 0 )                                                                                                                                                                                                                                               
       {                                                                                                                                                                                                                                                             

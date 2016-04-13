@@ -1,14 +1,13 @@
 /*
 C TESTBED VERSION  : 9.5.1
-FILE UNDER TEST  : "C:\_WorkSpace\Keil_Projects\Codigo Teste Placa E2294\Arm\CAN\main.c"
-DATE OF ANALYSIS : Mon Mar 21 17:00:27 2016
+FILE UNDER TEST  : "C:\_WorkSpace\Academic_Code\Keil_Projects\Codigo Teste Placa E2294\Arm\CAN\main.c"
+DATE OF ANALYSIS : Mon Apr 11 14:56:00 2016
 */
  
 #include <LPC22xx.H>
 #include <primitivetypes.h>
 #include <init.h>
 #include <global.h>
-#include <LdraTest.h>
 #undef QQQdialect 
 #undef QQQ146
 #undef QQQ148
@@ -28,7 +27,7 @@ DATE OF ANALYSIS : Mon Mar 21 17:00:27 2016
 #undef QQNEWBS
 #define qqqMaxBranchDepth     20
 #undef QQQstructbitmap
- static int zzfileid =     44;
+ static int zzfileid =     48;
 #undef QQQALGONE
 #undef QQQVCLFLG
 #undef QQQFORKFL
@@ -53,9 +52,9 @@ DATE OF ANALYSIS : Mon Mar 21 17:00:27 2016
 #define QQQseparate
 int QQQindicator=0;
 int QQQfirstmcdc=1;
-#define main_44zzopen                                                                                         zzopen
- int main_44zzopen                                                                                        = 0;
-#define main_44zqqzqz1                                                                                        zqqzqz1
+#define main_48zzopen                                                                                         zzopen
+ int main_48zzopen                                                                                        = 0;
+#define main_48zqqzqz1                                                                                        zqqzqz1
 #define QQQLDRA_PORT 
 #ifndef QQQLDRA_PORT                                                                                                                                                                                                                                                
 #define FILEPOINT FILE * f,                                                                                                                                                                                                                                         
@@ -365,33 +364,33 @@ void ldra_close (void) {
   static void qqoutput4(FILEPOINT char * s,int i,int j,int k,int l);                                                                                                                                                                                                
   static void qqoutput0(FILEPOINT char * s);                                                                                                                                                                                                                        
   static int swzzqqzz (int qqqi, int onoff);                                                                                                                                                                                                                        
-  int main_44zqqzqz(qqnull_params);                                                                                                                                                                                                                                 
-  int main_44zqqzqz1(qqnull_params);                                                                                                                                                                                                                                
-  static int main_44zzqqzz (int qqqi);                                                                                                                                                                                                                              
-  static int main_44zqendz (int qqqi);                                                                                                                                                                                                                              
-  static int main_44zqzqzq (int qqqi);                                                                                                                                                                                                                              
-  static int main_44zzzqtz (int qqqa, int qqqb);                                                                                                                                                                                                                    
-  static int main_44zzzqfz (int qqqa, int qqqb);                                                                                                                                                                                                                    
-  static int main_44zzdo17 (int dummy,int a, int b);                                                                                                                                                                                                                
-  void main_44zzdump (qqnull_params) ;                                                                                                                                                                                                                              
-  void main_44zzzfun(int i);                                                                                                                                                                                                                                        
+  int main_48zqqzqz(qqnull_params);                                                                                                                                                                                                                                 
+  int main_48zqqzqz1(qqnull_params);                                                                                                                                                                                                                                
+  static int main_48zzqqzz (int qqqi);                                                                                                                                                                                                                              
+  static int main_48zqendz (int qqqi);                                                                                                                                                                                                                              
+  static int main_48zqzqzq (int qqqi);                                                                                                                                                                                                                              
+  static int main_48zzzqtz (int qqqa, int qqqb);                                                                                                                                                                                                                    
+  static int main_48zzzqfz (int qqqa, int qqqb);                                                                                                                                                                                                                    
+  static int main_48zzdo17 (int dummy,int a, int b);                                                                                                                                                                                                                
+  void main_48zzdump (qqnull_params) ;                                                                                                                                                                                                                              
+  void main_48zzzfun(int i);                                                                                                                                                                                                                                        
   void qqqupload (qqnull_params);                                                                                                                                                                                                                                   
   void upload_execution_history(qqnull_params);                                                                                                                                                                                                                     
 /* ------------------------------ END OF TESTBED PROTOTYPES -------------------------------- */                                                                                                                                                                     
  
-bool_t
+unsigned int
   b_On ;
  
-bool_t
+unsigned int
   b_Fail ;
  
-bool_t
+unsigned int
   b_Panel ;
  
-bool_t
+unsigned int
   b_Shutdown ;
  
-bool_t
+unsigned int
   b_Maintenance ;
  
 signed short
@@ -412,25 +411,25 @@ unsigned short
 void
   led()
   {
-   int imain_44zzqqzz                                                                                       
- = main_44zzqqzz                                                                                        (       1 ) ; /* 37 */
+   int imain_48zzqqzz                                                                                       
+ = main_48zzqqzz                                                                                        (       1 ) ; /* 37 */
     volatile static char
       x = 0 ;
     if
  (  /* 50 */
       (
       
-  main_44zzdo17                                                                                        (    0,  /*  81 */ 
+  main_48zzdo17                                                                                        (    0,  /*  81 */ 
       
-  main_44zzzqfz                                                                                        (     /*  52 */ 
+  main_48zzzqfz                                                                                        (     /*  52 */ 
       (
       ( flaggeral & 4 ) == 4
       )
-   ? main_44zzdo17                                                                                       (    1, 1,      5) : 
-main_44zzdo17                                                                                       (    1, 0,      5) ,       3  )  /*  54 */
+   ? main_48zzdo17                                                                                       (    1, 1,      5) : 
+main_48zzdo17                                                                                       (    1, 0,      5) ,       3  )  /*  54 */
       &&
       
-  main_44zzdo17                                                                                        (    2, /*  72 */ 
+  main_48zzdo17                                                                                        (    2, /*  72 */ 
       ( x == 1
       )
   ? 1 : 0  ,       7  )  /*  73 */
@@ -438,7 +437,7 @@ main_44zzdo17                                                                   
       )
   ) /* 1 */
  {
-    main_44zzqqzz                                                                                        (     10 ) ; /* 1 */
+    main_48zzqqzz                                                                                        (     10 ) ; /* 1 */
       {
         flaggeral &= 0xFB ;
         x = 0 ;
@@ -446,22 +445,22 @@ main_44zzdo17                                                                   
       }
  }                                                                                                   
 else                                                                                                
-  main_44zzqqzz                                                                                        (     11 ) ; /* 4 */
+  main_48zzqqzz                                                                                        (     11 ) ; /* 4 */
     if
  (  /* 50 */
       (
       
-  main_44zzdo17                                                                                        (    0,  /*  81 */ 
+  main_48zzdo17                                                                                        (    0,  /*  81 */ 
       
-  main_44zzzqfz                                                                                        (     /*  52 */ 
+  main_48zzzqfz                                                                                        (     /*  52 */ 
       (
       ( flaggeral & 4 ) == 4
       )
-   ? main_44zzdo17                                                                                       (    1, 1,     15) : 
-main_44zzdo17                                                                                       (    1, 0,     15) ,      13  )  /*  54 */
+   ? main_48zzdo17                                                                                       (    1, 1,     15) : 
+main_48zzdo17                                                                                       (    1, 0,     15) ,      13  )  /*  54 */
       &&
       
-  main_44zzdo17                                                                                        (    2, /*  72 */ 
+  main_48zzdo17                                                                                        (    2, /*  72 */ 
       ( x == 0
       )
   ? 1 : 0  ,      17  )  /*  73 */
@@ -469,7 +468,7 @@ main_44zzdo17                                                                   
       )
   ) /* 1 */
  {
-    main_44zzqqzz                                                                                        (     20 ) ; /* 1 */
+    main_48zzqqzz                                                                                        (     20 ) ; /* 1 */
       {
         flaggeral &= 0xFB ;
         x = 1 ;
@@ -477,14 +476,14 @@ main_44zzdo17                                                                   
       }
  }                                                                                                   
 else                                                                                                
-  main_44zzqqzz                                                                                        (     21 ) ; /* 4 */
-    main_44zzqqzz                                                                                        (      22 ) ; /* 30 */  
+  main_48zzqqzz                                                                                        (     21 ) ; /* 4 */
+    main_48zzqqzz                                                                                        (      22 ) ; /* 30 */  
   }
  
 int
   main ( void )
   {
-  int mainzz = main_44zqqzqz1                                                                                       (); /* 46 */
+  int mainzz = main_48zqqzqz1                                                                                       (); /* 46 */
     static volatile uint16_t
       count = 0 ;
     static volatile uint64_t
@@ -502,7 +501,8 @@ int
     ushort_timeCount = 0U ;
     b_Shutdown = 0 ;
     hardware_init () ;
-    IO0CLR = 0x00000400 ;    //Liga Backlight do LCD
+        //LdraTest();
+        //led();
     while
       (
  (  /* 21 */ 
@@ -511,58 +511,54 @@ int
       )
       {
  { /* 32 */
-  int zzqqzs = main_44zzqqzz                                                                                        (     23 ) ; /* 32a */
-         //LdraTest();
- main_44zzqqzz                                                                                        (      24 ) ; /* 23 */
- 
-        led ( ) ;
+  int zzqqzs = main_48zzqqzz                                                                                        (     23 ) ; /* 32a */
         if
           (
           ushort_State == 9U
           )
  {
-    main_44zzqqzz                                                                                        (     25 ) ; /* 1 */
+    main_48zzqqzz                                                                                        (     24 ) ; /* 1 */
           {
           /*EMERGENCY STATE*/
             ushort_State = 1U ;
             /*System on STANDBY*/
             b_On = 0 ;
           }
-    main_44zzqqzz                                                                                        (     26 ) ; /* 3 */
+    main_48zzqqzz                                                                                        (     25 ) ; /* 3 */
  }
         else
  {                                                                                                    ;
-main_44zzqqzz                                                                                        (     27 ); /* 2 */
+main_48zzqqzz                                                                                        (     26 ); /* 2 */
           {
             if
               (
               ushort_State == 7U
               )
  {
-    main_44zzqqzz                                                                                        (     28 ) ; /* 1 */
+    main_48zzqqzz                                                                                        (     27 ) ; /* 1 */
               {
                 if
                   (
                   ushort_Mode == 2U
                   )
  {
-    main_44zzqqzz                                                                                        (     29 ) ; /* 1 */
+    main_48zzqqzz                                                                                        (     28 ) ; /* 1 */
                   {
                     if
                       (
                       b_Fail == 1
                       )
  {
-    main_44zzqqzz                                                                                        (     30 ) ; /* 1 */
+    main_48zzqqzz                                                                                        (     29 ) ; /* 1 */
                       {
                 // Mode EXTEND on REDUCED STATE
                         sshort_Position += 1U ;
                       }
-    main_44zzqqzz                                                                                        (     31 ) ; /* 3 */
+    main_48zzqqzz                                                                                        (     30 ) ; /* 3 */
  }
                     else
  {                                                                                                    ;
-main_44zzqqzz                                                                                        (     32 ); /* 2 */
+main_48zzqqzz                                                                                        (     31 ); /* 2 */
                       {
                         sshort_Position += 2U ;
                       }
@@ -572,43 +568,43 @@ main_44zzqqzz                                                                   
                       sshort_Position > 20U
                       )
  {
-    main_44zzqqzz                                                                                        (     33 ) ; /* 1 */
+    main_48zzqqzz                                                                                        (     32 ) ; /* 1 */
                       {
                 // Change to mode PANEL OPEN
                         ushort_Mode = 3U ;
                       }
  }                                                                                                   
 else                                                                                                
-  main_44zzqqzz                                                                                        (     34 ) ; /* 4 */
+  main_48zzqqzz                                                                                        (     33 ) ; /* 4 */
                   }
-    main_44zzqqzz                                                                                        (     35 ) ; /* 3 */
+    main_48zzqqzz                                                                                        (     34 ) ; /* 3 */
  }
                 else
  {                                                                                                    ;
-main_44zzqqzz                                                                                        (     36 ); /* 2 */
+main_48zzqqzz                                                                                        (     35 ); /* 2 */
                   {
                     if
                       (
                       ushort_Mode == 4U
                       )
  {
-    main_44zzqqzz                                                                                        (     37 ) ; /* 1 */
+    main_48zzqqzz                                                                                        (     36 ) ; /* 1 */
                       {
                         if
                           (
                           b_Fail == 1
                           )
  {
-    main_44zzqqzz                                                                                        (     38 ) ; /* 1 */
+    main_48zzqqzz                                                                                        (     37 ) ; /* 1 */
                           {
                 // Mode RETRACT
                             sshort_Position -= 1U ;
                           }
-    main_44zzqqzz                                                                                        (     39 ) ; /* 3 */
+    main_48zzqqzz                                                                                        (     38 ) ; /* 3 */
  }
                         else
  {                                                                                                    ;
-main_44zzqqzz                                                                                        (     40 ); /* 2 */
+main_48zzqqzz                                                                                        (     39 ); /* 2 */
                           {
              // Mode RETRACT
                             sshort_Position -= 2U ;
@@ -619,27 +615,27 @@ main_44zzqqzz                                                                   
                           sshort_Position < 0
                           )
  {
-    main_44zzqqzz                                                                                        (     41 ) ; /* 1 */
+    main_48zzqqzz                                                                                        (     40 ) ; /* 1 */
                           {
                 //*Change to mode PANEL CLOSE
                             ushort_Mode = 1U ;
                           }
  }                                                                                                   
 else                                                                                                
-  main_44zzqqzz                                                                                        (     42 ) ; /* 4 */
+  main_48zzqqzz                                                                                        (     41 ) ; /* 4 */
                       }
-    main_44zzqqzz                                                                                        (     43 ) ; /* 3 */
+    main_48zzqqzz                                                                                        (     42 ) ; /* 3 */
  }
                     else
  {                                                                                                    ;
-main_44zzqqzz                                                                                        (     44 ); /* 2 */
+main_48zzqqzz                                                                                        (     43 ); /* 2 */
                       {
                         if
                           (
                           ushort_Mode == 1U
                           )
  {
-    main_44zzqqzz                                                                                        (     45 ) ; /* 1 */
+    main_48zzqqzz                                                                                        (     44 ) ; /* 1 */
                           {
             //* Mode PANEL CLOSE
                             if
@@ -647,27 +643,27 @@ main_44zzqqzz                                                                   
                               b_Panel == 1
                               )
  {
-    main_44zzqqzz                                                                                        (     46 ) ; /* 1 */
+    main_48zzqqzz                                                                                        (     45 ) ; /* 1 */
                               {
                 //* Change to mode EXTEND
                                 ushort_Mode = 2U ;
                               }
  }                                                                                                   
 else                                                                                                
-  main_44zzqqzz                                                                                        (     47 ) ; /* 4 */
+  main_48zzqqzz                                                                                        (     46 ) ; /* 4 */
                           }
-    main_44zzqqzz                                                                                        (     48 ) ; /* 3 */
+    main_48zzqqzz                                                                                        (     47 ) ; /* 3 */
  }
                         else
  {                                                                                                    ;
-main_44zzqqzz                                                                                        (     49 ); /* 2 */
+main_48zzqqzz                                                                                        (     48 ); /* 2 */
                           {
                             if
                               (
                               ushort_Mode == 3U
                               )
  {
-    main_44zzqqzz                                                                                        (     50 ) ; /* 1 */
+    main_48zzqqzz                                                                                        (     49 ) ; /* 1 */
                               {
             //*Mode PANEL OPEN
                                 if
@@ -675,20 +671,20 @@ main_44zzqqzz                                                                   
                                   b_Panel == 0
                                   )
  {
-    main_44zzqqzz                                                                                        (     51 ) ; /* 1 */
+    main_48zzqqzz                                                                                        (     50 ) ; /* 1 */
                                   {
                 //*Change to mode RETRACT
                                     ushort_Mode = 4U ;
                                   }
  }                                                                                                   
 else                                                                                                
-  main_44zzqqzz                                                                                        (     52 ) ; /* 4 */
+  main_48zzqqzz                                                                                        (     51 ) ; /* 4 */
                               }
-    main_44zzqqzz                                                                                        (     53 ) ; /* 3 */
+    main_48zzqqzz                                                                                        (     52 ) ; /* 3 */
  }
                             else
  {                                                                                                    ;
-main_44zzqqzz                                                                                        (     54 ); /* 2 */
+main_48zzqqzz                                                                                        (     53 ); /* 2 */
                               {
             // Mode SAFE SHUTDOWN
                                 sshort_Position = 0U ;
@@ -701,25 +697,25 @@ main_44zzqqzz                                                                   
                   }
  }
               }
-    main_44zzqqzz                                                                                        (     55 ) ; /* 3 */
+    main_48zzqqzz                                                                                        (     54 ) ; /* 3 */
  }
             else
  {                                                                                                    ;
-main_44zzqqzz                                                                                        (     56 ); /* 2 */
+main_48zzqqzz                                                                                        (     55 ); /* 2 */
               {
                 if
                   (
                   ushort_State == 1U
                   )
  {
-    main_44zzqqzz                                                                                        (     57 ) ; /* 1 */
+    main_48zzqqzz                                                                                        (     56 ) ; /* 1 */
                   {
                     if
                       (
                       b_On == 1
                       )
  {
-    main_44zzqqzz                                                                                        (     58 ) ; /* 1 */
+    main_48zzqqzz                                                                                        (     57 ) ; /* 1 */
                       {
                       /*Change State to IBIT*/
                         ushort_State = 2U ;
@@ -727,63 +723,63 @@ main_44zzqqzz                                                                   
                       }
  }                                                                                                   
 else                                                                                                
-  main_44zzqqzz                                                                                        (     59 ) ; /* 4 */
+  main_48zzqqzz                                                                                        (     58 ) ; /* 4 */
                     if
                       (
                       b_Shutdown == 1
                       )
  {
-    main_44zzqqzz                                                                                        (     60 ) ; /* 1 */
+    main_48zzqqzz                                                                                        (     59 ) ; /* 1 */
                       {
                       }
  }                                                                                                   
 else                                                                                                
-  main_44zzqqzz                                                                                        (     61 ) ; /* 4 */
+  main_48zzqqzz                                                                                        (     60 ) ; /* 4 */
                   }
-    main_44zzqqzz                                                                                        (     62 ) ; /* 3 */
+    main_48zzqqzz                                                                                        (     61 ) ; /* 3 */
  }
                 else
  {                                                                                                    ;
-main_44zzqqzz                                                                                        (     63 ); /* 2 */
+main_48zzqqzz                                                                                        (     62 ); /* 2 */
                   {
                     if
                       (
                       ushort_State == 2U
                       )
  {
-    main_44zzqqzz                                                                                        (     64 ) ; /* 1 */
+    main_48zzqqzz                                                                                        (     63 ) ; /* 1 */
                       {
                         if
                           (
                           ushort_Power <= 200U
                           )
  {
-    main_44zzqqzz                                                                                        (     65 ) ; /* 1 */
+    main_48zzqqzz                                                                                        (     64 ) ; /* 1 */
                           {
                           /*Change State to EMERGENCY*/
                             ushort_State = 9U ;
                           }
-    main_44zzqqzz                                                                                        (     66 ) ; /* 3 */
+    main_48zzqqzz                                                                                        (     65 ) ; /* 3 */
  }
                         else
  {                                                                                                    ;
-main_44zzqqzz                                                                                        (     67 ); /* 2 */
+main_48zzqqzz                                                                                        (     66 ); /* 2 */
                           {
                             if
                               (
                               ushort_Power <= 500U
                               )
  {
-    main_44zzqqzz                                                                                        (     68 ) ; /* 1 */
+    main_48zzqqzz                                                                                        (     67 ) ; /* 1 */
                               {
                               /*Change State to FAIL*/
                                 ushort_State = 3U ;
                               }
-    main_44zzqqzz                                                                                        (     69 ) ; /* 3 */
+    main_48zzqqzz                                                                                        (     68 ) ; /* 3 */
  }
                             else
  {                                                                                                    ;
-main_44zzqqzz                                                                                        (     70 ); /* 2 */
+main_48zzqqzz                                                                                        (     69 ); /* 2 */
                               {
                                 ushort_timeCount ++ ;
                                 if
@@ -791,89 +787,89 @@ main_44zzqqzz                                                                   
                                   ushort_timeCount > 5U
                                   )
  {
-    main_44zzqqzz                                                                                        (     71 ) ; /* 1 */
+    main_48zzqqzz                                                                                        (     70 ) ; /* 1 */
                                   {
                                   /*Change State to READY*/
                                     ushort_State = 4U ;
                                   }
  }                                                                                                   
 else                                                                                                
-  main_44zzqqzz                                                                                        (     72 ) ; /* 4 */
+  main_48zzqqzz                                                                                        (     71 ) ; /* 4 */
                               }
  }
                           }
  }
                       }
-    main_44zzqqzz                                                                                        (     73 ) ; /* 3 */
+    main_48zzqqzz                                                                                        (     72 ) ; /* 3 */
  }
                     else
  {                                                                                                    ;
-main_44zzqqzz                                                                                        (     74 ); /* 2 */
+main_48zzqqzz                                                                                        (     73 ); /* 2 */
                       {
                         if
                           (
                           ushort_State == 3U
                           )
  {
-    main_44zzqqzz                                                                                        (     75 ) ; /* 1 */
+    main_48zzqqzz                                                                                        (     74 ) ; /* 1 */
                           {
                           /*Change State to OPERATIONAL REDUCED*/
                             ushort_State = 7U ;
                             ushort_Mode = 1U ;
                             b_Fail = 1 ;
                           }
-    main_44zzqqzz                                                                                        (     76 ) ; /* 3 */
+    main_48zzqqzz                                                                                        (     75 ) ; /* 3 */
  }
                         else
  {                                                                                                    ;
-main_44zzqqzz                                                                                        (     77 ); /* 2 */
+main_48zzqqzz                                                                                        (     76 ); /* 2 */
                           {
                             if
                               (
                               ushort_State == 4U
                               )
  {
-    main_44zzqqzz                                                                                        (     78 ) ; /* 1 */
+    main_48zzqqzz                                                                                        (     77 ) ; /* 1 */
                               {
                                 if
                                   (
                                   b_Maintenance == 1
                                   )
  {
-    main_44zzqqzz                                                                                        (     79 ) ; /* 1 */
+    main_48zzqqzz                                                                                        (     78 ) ; /* 1 */
                                   {
                                   /*Change State to MAINTENANCE*/
                                     ushort_State = 6U ;
                                   }
-    main_44zzqqzz                                                                                        (     80 ) ; /* 3 */
+    main_48zzqqzz                                                                                        (     79 ) ; /* 3 */
  }
                                 else
  {                                                                                                    ;
-main_44zzqqzz                                                                                        (     81 ); /* 2 */
+main_48zzqqzz                                                                                        (     80 ); /* 2 */
                                   {
                                   /*Change State to Operational*/
                                     ushort_State = 7U ;
                                   }
  }
                               }
-    main_44zzqqzz                                                                                        (     82 ) ; /* 3 */
+    main_48zzqqzz                                                                                        (     81 ) ; /* 3 */
  }
                             else
  {                                                                                                    ;
-main_44zzqqzz                                                                                        (     83 ); /* 2 */
+main_48zzqqzz                                                                                        (     82 ); /* 2 */
                               {
                                 if
                                   (
                                   ushort_State == 6U
                                   )
  {
-    main_44zzqqzz                                                                                        (     84 ) ; /* 1 */
+    main_48zzqqzz                                                                                        (     83 ) ; /* 1 */
                                   {
                                   /*State MAINTENANCE*/
                                   }
  }                                                                                                   
 else                                                                                                
-  main_44zzqqzz                                                                                        (     85 ) ; /* 4 */
+  main_48zzqqzz                                                                                        (     84 ) ; /* 4 */
                               }
  }
                           }
@@ -886,120 +882,13 @@ else
  }
           }
  }
-        if
-          (
-          ( flaggeral & 2 ) == 2
-          )
- {
-    main_44zzqqzz                                                                                        (     86 ) ; /* 1 */
-          {
-            flaggeral &= 0xFD ;
-            while
-              (
- (  /* 21 */ 
-              ! ( C1SR & 0x00000004 )
-  )  /* 7 */
-              )
-              {
- { /* 32 */
-  int zzqqzs = main_44zzqqzz                                                                                        (     87 ) ; /* 32a */
-    main_44zzqqzz                                                                                        (     88 ) ;} /* 6 */
-              }                         //Verifica se Buffer esta livre para transmitir
-    main_44zzqqzz                                                                                        (     89 ) ; /* 5 */
-            C1TFI1 = 0x00020000 ;
-                                //ID 11 Bits
-            C1TID1 = 0x00000350 ;
-                                //ID da mensagem
-            C1TDA1 = count ;
-            C1CMR = 0x00000001 ;
-                               //Transmite a mensagem Self Reception
-            while
-              (
- (  /* 21 */ 
-              ! ( C1SR & 0x00000004 )
-  )  /* 7 */
-              )
-              {
- { /* 32 */
-  int zzqqzs = main_44zzqqzz                                                                                        (     90 ) ; /* 32a */
-    main_44zzqqzz                                                                                        (     91 ) ;} /* 6 */
-              }                         //Verifica se Buffer esta livre para transmitir
-    main_44zzqqzz                                                                                        (     92 ) ; /* 5 */
-            C1TFI1 = 0x00020000 ;
-                                //ID 11 Bits
-            C1TID1 = 0x00000380 ;
-                                //ID da mensagem
-            C1TDA1 = count ;
-            C1CMR = 0x00000001 ;
-                               //Transmite a mensagem Self Reception
-            while
-              (
- (  /* 21 */ 
-              ! ( C1SR & 0x00000004 )
-  )  /* 7 */
-              )
-              {
- { /* 32 */
-  int zzqqzs = main_44zzqqzz                                                                                        (     93 ) ; /* 32a */
-    main_44zzqqzz                                                                                        (     94 ) ;} /* 6 */
-              }                         //Verifica se Buffer esta livre para transmitir
-    main_44zzqqzz                                                                                        (     95 ) ; /* 5 */
-            C1TFI1 = 0x00020000 ;
-                                //ID 11 Bits
-            C1TID1 = 0x00000200 ;
-                                //ID da mensagem
-            C1TDA1 = count ;
-            C1CMR = 0x00000001 ;
-                               //Transmite a mensagem Self Reception
-            while
-              (
- (  /* 21 */ 
-              ! ( C1SR & 0x00000004 )
-  )  /* 7 */
-              )
-              {
- { /* 32 */
-  int zzqqzs = main_44zzqqzz                                                                                        (     96 ) ; /* 32a */
-    main_44zzqqzz                                                                                        (     97 ) ;} /* 6 */
-              }                         //Verifica se Buffer esta livre para transmitir
-    main_44zzqqzz                                                                                        (     98 ) ; /* 5 */
-            C1TFI1 = 0x00020000 ;
-                                //ID 11 Bits
-            C1TID1 = 0x00000300 ;
-                                //ID da mensagem
-            C1TDA1 = count ;
-            C1CMR = 0x00000001 ;
-                               //Transmite a mensagem Self Reception
-            while
-              (
- (  /* 21 */ 
-              ! ( C1SR & 0x00000004 )
-  )  /* 7 */
-              )
-              {
- { /* 32 */
-  int zzqqzs = main_44zzqqzz                                                                                        (     99 ) ; /* 32a */
-    main_44zzqqzz                                                                                        (    100 ) ;} /* 6 */
-              }                         //Verifica se Buffer esta livre para transmitir
-    main_44zzqqzz                                                                                        (    101 ) ; /* 5 */
-            C1TFI1 = 0x00020000 ;
-                                //ID 11 Bits
-            C1TID1 = 0x00000340 ;
-                                //ID da mensagem
-            C1TDA1 = count ;
-            C1CMR = 0x00000001 ;
-            count ++ ;
-          }
- }                                                                                                   
-else                                                                                                
-  main_44zzqqzz                                                                                        (    102 ) ; /* 4 */
-    main_44zzqqzz                                                                                        (    103 ) ;} /* 6 */
+    main_48zzqqzz                                                                                        (     85 ) ;} /* 6 */
       }
-    main_44zzqqzz                                                                                        (    104 ) ; /* 5 */
-    main_44zqzqzq                                                                                        (     105 ) ; /* 34 */
+    main_48zzqqzz                                                                                        (     86 ) ; /* 5 */
+    main_48zqzqzq                                                                                        (      87 ) ; /* 34 */
   }
-#define qqqbranches    105
-#define QQQMAXMCDCSIZE     98
+#define qqqbranches     87
+#define QQQMAXMCDCSIZE     74
 #define ldra_sscanf                                                                                                                                                                                                                                                 
   /* put in undefs to protect our parameter names from macros */                                                                                                                                                                                                    
 #undef f                                                                                                                                                                                                                                                            
@@ -1055,8 +944,8 @@ else
   short qqzzglobbrns[QQQnumfil];                                                                                                                                                                                                                                    
   short qqzzglobfileid[QQQnumfil];                                                                                                                                                                                                                                  
   int qqupload_registered = 0;                                                                                                                                                                                                                                      
-  int main_44zqqzqz(qqnull_params);                                                                                                                                                                                                                                 
-  int main_44zqqzqz1(qqnull_params);                                                                                                                                                                                                                                
+  int main_48zqqzqz(qqnull_params);                                                                                                                                                                                                                                 
+  int main_48zqqzqz1(qqnull_params);                                                                                                                                                                                                                                
     /* ----------------------------------------------------------------------* 179 *                                                                                                                                                                                
      *            Procedures                                                                                                                                                                                                                                        
      * -----------------------------------------------------------------------------                                                                                                                                                                                
@@ -1065,7 +954,7 @@ else
    *        Returns an integer extracted from a string                                                                                                                                                                                                              
    * -----------------------------------------------------------------------------                                                                                                                                                                                  
    */                                                                                                                                                                                                                                                               
-  static int main_44zscanf(char * qqscan_str)                                                                                                                                                                                                                       
+  static int main_48zscanf(char * qqscan_str)                                                                                                                                                                                                                       
   {                                                                                                                                                                                                                                                                 
     int qqvalue;                                                                                                                                                                                                                                                    
     int qqisign;                                                                                                                                                                                                                                                    
@@ -1212,7 +1101,7 @@ else
    *  safety features.                                                                                                                                                                                                                                              
    * -----------------------------------------------------------------------------                                                                                                                                                                                  
    */                                                                                                                                                                                                                                                               
-  void main_44zzzfun(int ii)                                                                                                                                                                                                                                        
+  void main_48zzzfun(int ii)                                                                                                                                                                                                                                        
   {                                                                                                                                                                                                                                                                 
     int i;                                                                                                                                                                                                                                                          
     int iz;                                                                                                                                                                                                                                                         
@@ -1554,15 +1443,15 @@ mcdcloop:
   /* ----------------------------------------------------------------------* 287 *                                                                                                                                                                                  
    * This routine opens the execution history file. It is instrumented at the                                                                                                                                                                                       
    * start of the main program if one exists in the file. In general this is                                                                                                                                                                                        
-   * superceded by main_44zqqzqz1 below.                                                                                                                                                                                                                            
+   * superceded by main_48zqqzqz1 below.                                                                                                                                                                                                                            
    * -----------------------------------------------------------------------------                                                                                                                                                                                  
    */                                                                                                                                                                                                                                                               
-  int main_44zqqzqz(qqnull_params)                                                                                                                                                                                                                                  
+  int main_48zqqzqz(qqnull_params)                                                                                                                                                                                                                                  
   {                                                                                                                                                                                                                                                                 
-    if ( main_44zzopen != 1 )                                                                                                                                                                                                                                       
+    if ( main_48zzopen != 1 )                                                                                                                                                                                                                                       
     {                                                                                                                                                                                                                                                               
       ldra_open();                                                                                                                                                                                                                                                  
-      main_44zzopen = 1;                                                                                                                                                                                                                                            
+      main_48zzopen = 1;                                                                                                                                                                                                                                            
     }                                                                                                                                                                                                                                                               
     return(1);                                                                                                                                                                                                                                                      
   }                                                                                                                                                                                                                                                                 
@@ -1572,18 +1461,18 @@ mcdcloop:
   /* ----------------------------------------------------------------------* 293 *                                                                                                                                                                                  
    * This routine also opens the execution history file.  It is called                                                                                                                                                                                              
    * automatically if a probe fires and the execution history is not already                                                                                                                                                                                        
-   * opened (main_44zzopen = 0 ).                                                                                                                                                                                                                                   
+   * opened (main_48zzopen = 0 ).                                                                                                                                                                                                                                   
    * Because this always works ( it was intended for files with no main program                                                                                                                                                                                     
    * it is now the de facto common way to open the execution history.                                                                                                                                                                                               
    * -----------------------------------------------------------------------------                                                                                                                                                                                  
    */                                                                                                                                                                                                                                                               
-  int main_44zqqzqz1(qqnull_params)                                                                                                                                                                                                                                 
+  int main_48zqqzqz1(qqnull_params)                                                                                                                                                                                                                                 
   {                                                                                                                                                                                                                                                                 
-    if ( main_44zzopen != 1 )                                                                                                                                                                                                                                       
+    if ( main_48zzopen != 1 )                                                                                                                                                                                                                                       
     {                                                                                                                                                                                                                                                               
       ldra_open(); /* 7 */                                                                                                                                                                                                                                          
       qqqqinitialise(0);                                                                                                                                                                                                                                            
-      main_44zzopen = 1;                                                                                                                                                                                                                                            
+      main_48zzopen = 1;                                                                                                                                                                                                                                            
     }                                                                                                                                                                                                                                                               
     return(1);                                                                                                                                                                                                                                                      
   }                                                                                                                                                                                                                                                                 
@@ -1595,16 +1484,16 @@ mcdcloop:
    * the execution history file and returns unity.                                                                                                                                                                                                                  
    * This routine is the primary routine for gathering                                                                                                                                                                                                              
    * the execution history. Note that the last entry                                                                                                                                                                                                                
-   * is usually inserted by main_44zqzqzq.                                                                                                                                                                                                                          
+   * is usually inserted by main_48zqzqzq.                                                                                                                                                                                                                          
    * -----------------------------------------------------------------------------                                                                                                                                                                                  
    */                                                                                                                                                                                                                                                               
-  static int main_44zzqqzz(int qqqi)                                                                                                                                                                                                                                
+  static int main_48zzqqzz(int qqqi)                                                                                                                                                                                                                                
   {                                                                                                                                                                                                                                                                 
-    if ( main_44zzopen != 1 )                                                                                                                                                                                                                                       
+    if ( main_48zzopen != 1 )                                                                                                                                                                                                                                       
     {                                                                                                                                                                                                                                                               
-      main_44zqqzqz1();                                                                                                                                                                                                                                             
+      main_48zqqzqz1();                                                                                                                                                                                                                                             
     }                                                                                                                                                                                                                                                               
-    if ( main_44zzopen )                                                                                                                                                                                                                                            
+    if ( main_48zzopen )                                                                                                                                                                                                                                            
     {                                                                                                                                                                                                                                                               
       /* bitmap   */                                                                                                                                                                                                                                                
       if ( qqqi > 0 )                                                                                                                                                                                                                                               
@@ -1617,7 +1506,7 @@ mcdcloop:
         /* MC/DC probe */                                                                                                                                                                                                                                           
         if (qqqmcdcsuppress == 0)                                                                                                                                                                                                                                   
         {                                                                                                                                                                                                                                                           
-          main_44zzzfun(qqqi);                                                                                                                                                                                                                                      
+          main_48zzzfun(qqqi);                                                                                                                                                                                                                                      
         }                                                                                                                                                                                                                                                           
       }                                                                                                                                                                                                                                                             
     }                                                                                                                                                                                                                                                               
@@ -1628,11 +1517,11 @@ mcdcloop:
    * module. It closes the execution history.                                                                                                                                                                                                                       
    * -----------------------------------------------------------------------------                                                                                                                                                                                  
    */                                                                                                                                                                                                                                                               
-static int main_44zqendz(int qqqi)                                                                                                                                                                                                                                  
+static int main_48zqendz(int qqqi)                                                                                                                                                                                                                                  
   {                                                                                                                                                                                                                                                                 
-      if ( main_44zzopen != 1 )                                                                                                                                                                                                                                     
+      if ( main_48zzopen != 1 )                                                                                                                                                                                                                                     
       {                                                                                                                                                                                                                                                             
-        main_44zqqzqz1();                                                                                                                                                                                                                                           
+        main_48zqqzqz1();                                                                                                                                                                                                                                           
       }                                                                                                                                                                                                                                                             
       /* ----------------------------------------------------------------------* 307 *                                                                                                                                                                              
        * this is the one which puts an integer into                                                                                                                                                                                                                 
@@ -1641,7 +1530,7 @@ static int main_44zqendz(int qqqi)
        * the number is right justified in this field.                                                                                                                                                                                                               
        * -----------------------------------------------------------------------------                                                                                                                                                                              
        */                                                                                                                                                                                                                                                           
-      if ( main_44zzopen )                                                                                                                                                                                                                                          
+      if ( main_48zzopen )                                                                                                                                                                                                                                          
       {                                                                                                                                                                                                                                                             
         /* uncompressed */                                                                                                                                                                                                                                          
         /* uncompressed unbuffered */                                                                                                                                                                                                                               
@@ -1654,7 +1543,7 @@ static int main_44zqendz(int qqqi)
         {                                                                                                                                                                                                                                                           
           if (qqqmcdcsuppress == 0)                                                                                                                                                                                                                                 
           {                                                                                                                                                                                                                                                         
-            main_44zzzfun(qqqi);                                                                                                                                                                                                                                    
+            main_48zzzfun(qqqi);                                                                                                                                                                                                                                    
           }                                                                                                                                                                                                                                                         
         }                                                                                                                                                                                                                                                           
       }                                                                                                                                                                                                                                                             
@@ -1669,7 +1558,7 @@ static int main_44zqendz(int qqqi)
     {                                                                                                                                                                                                                                                               
       if (qqqmcdcsuppress == 0)                                                                                                                                                                                                                                     
       {                                                                                                                                                                                                                                                             
-        main_44zzzfun(qqqi);                                                                                                                                                                                                                                        
+        main_48zzzfun(qqqi);                                                                                                                                                                                                                                        
       }                                                                                                                                                                                                                                                             
     }                                                                                                                                                                                                                                                               
     /*  clear qqqlast for reentry */                                                                                                                                                                                                                                
@@ -1681,8 +1570,8 @@ static int main_44zqendz(int qqqi)
       ldra_close();                                                                                                                                                                                                                                                 
     }                                                                                                                                                                                                                                                               
     /* ----------------------------------------------------------------------* 310 *                                                                                                                                                                                
-     * fclose(main_44zzhfil);                                                                                                                                                                                                                                       
-     * main_44zzopen = 0;                                                                                                                                                                                                                                           
+     * fclose(main_48zzhfil);                                                                                                                                                                                                                                       
+     * main_48zzopen = 0;                                                                                                                                                                                                                                           
      * -----------------------------------------------------------------------------                                                                                                                                                                                
      */                                                                                                                                                                                                                                                             
     return(1);                                                                                                                                                                                                                                                      
@@ -1725,7 +1614,7 @@ static int main_44zqendz(int qqqi)
       }                                                                                                                                                                                                                                                             
     }                                                                                                                                                                                                                                                               
     qqqlast = 0;                                                                                                                                                                                                                                                    
-    main_44zzopen = 2;                                                                                                                                                                                                                                              
+    main_48zzopen = 2;                                                                                                                                                                                                                                              
   } /* End of qqqupload */                                                                                                                                                                                                                                          
   /* ----------- zqzqzq ---------------------------------------------------* 318 *                                                                                                                                                                                  
    * -----------------------------------------------------------------------------                                                                                                                                                                                  
@@ -1735,24 +1624,24 @@ static int main_44zqendz(int qqqi)
    * terminates. It closes the execution history                                                                                                                                                                                                                    
    * -----------------------------------------------------------------------------                                                                                                                                                                                  
    */                                                                                                                                                                                                                                                               
-  static int main_44zqzqzq(int qqqi)                                                                                                                                                                                                                                
+  static int main_48zqzqzq(int qqqi)                                                                                                                                                                                                                                
   {                                                                                                                                                                                                                                                                 
-      if ( main_44zzopen != 1 )                                                                                                                                                                                                                                     
+      if ( main_48zzopen != 1 )                                                                                                                                                                                                                                     
       {                                                                                                                                                                                                                                                             
-        main_44zqqzqz1();                                                                                                                                                                                                                                           
+        main_48zqqzqz1();                                                                                                                                                                                                                                           
       }                                                                                                                                                                                                                                                             
       /* not compressed */                                                                                                                                                                                                                                          
       /* do nothing for bitmap*/                                                                                                                                                                                                                                    
       /* upload the history */                                                                                                                                                                                                                                      
       /* bitmap */                                                                                                                                                                                                                                                  
       /* uncompressed  bitmap */                                                                                                                                                                                                                                    
-      main_44zqendz(qqqi);                                                                                                                                                                                                                                          
+      main_48zqendz(qqqi);                                                                                                                                                                                                                                          
         /* qqqupload closes the execution history file */                                                                                                                                                                                                           
     return(1);                                                                                                                                                                                                                                                      
   } /* end of zqzqzq */                                                                                                                                                                                                                                             
   /*   the following routines should be left alone */                                                                                                                                                                                                               
   /* ----------------------------------------------------------------------* 331 *                                                                                                                                                                                  
-   *            main_44zzzqtz                                                                                                                                                                                                                                       
+   *            main_48zzzqtz                                                                                                                                                                                                                                       
    * This routine captures the value of an expression                                                                                                                                                                                                               
    * and then returns a jump if the value is not 0.                                                                                                                                                                                                                 
    *                                                                                                                                                                                                                                                                
@@ -1760,21 +1649,21 @@ static int main_44zqendz(int qqqi)
    *   qqqb - jump table index.                                                                                                                                                                                                                                     
    * -----------------------------------------------------------------------------                                                                                                                                                                                  
    */                                                                                                                                                                                                                                                               
-  static int main_44zzzqtz(int qqqa, int qqqb)                                                                                                                                                                                                                      
+  static int main_48zzzqtz(int qqqa, int qqqb)                                                                                                                                                                                                                      
   {                                                                                                                                                                                                                                                                 
       if (qqqa)                                                                                                                                                                                                                                                     
       {                                                                                                                                                                                                                                                             
-        main_44zzqqzz(qqqb) ;                                                                                                                                                                                                                                       
+        main_48zzqqzz(qqqb) ;                                                                                                                                                                                                                                       
       }                                                                                                                                                                                                                                                             
       else                                                                                                                                                                                                                                                          
       {                                                                                                                                                                                                                                                             
         /* straight on jump */                                                                                                                                                                                                                                      
-        main_44zzqqzz(qqqb-1);                                                                                                                                                                                                                                      
+        main_48zzqqzz(qqqb-1);                                                                                                                                                                                                                                      
       }                                                                                                                                                                                                                                                             
     return(qqqa);                                                                                                                                                                                                                                                   
   } /* end of zzzqtz */                                                                                                                                                                                                                                             
   /* ----------------------------------------------------------------------* 332 *                                                                                                                                                                                  
-   *            main_44zzzqfz                                                                                                                                                                                                                                       
+   *            main_48zzzqfz                                                                                                                                                                                                                                       
    * This routine captures the value of an expression                                                                                                                                                                                                               
    * and then returns a jump if the value is 0.                                                                                                                                                                                                                     
    *                                                                                                                                                                                                                                                                
@@ -1782,27 +1671,27 @@ static int main_44zqendz(int qqqi)
    *  qqqb - jump table index.                                                                                                                                                                                                                                      
    * -----------------------------------------------------------------------------                                                                                                                                                                                  
    */                                                                                                                                                                                                                                                               
-  static int main_44zzzqfz(int qqqa,int qqqb)                                                                                                                                                                                                                       
+  static int main_48zzzqfz(int qqqa,int qqqb)                                                                                                                                                                                                                       
   {                                                                                                                                                                                                                                                                 
     {                                                                                                                                                                                                                                                               
       if (qqqa)                                                                                                                                                                                                                                                     
       {                                                                                                                                                                                                                                                             
         /* straight on jump */                                                                                                                                                                                                                                      
-        main_44zzqqzz(qqqb-1);                                                                                                                                                                                                                                      
+        main_48zzqqzz(qqqb-1);                                                                                                                                                                                                                                      
         return(qqqa);                                                                                                                                                                                                                                               
       }                                                                                                                                                                                                                                                             
       else                                                                                                                                                                                                                                                          
       {                                                                                                                                                                                                                                                             
-        main_44zzqqzz(qqqb);                                                                                                                                                                                                                                        
+        main_48zzqqzz(qqqb);                                                                                                                                                                                                                                        
       }                                                                                                                                                                                                                                                             
     }                                                                                                                                                                                                                                                               
     return(qqqa);                                                                                                                                                                                                                                                   
   } /* zzzqfz */                                                                                                                                                                                                                                                    
   /* ----------------------------------------------------------------------* 333 *                                                                                                                                                                                  
-   *            main_44zzdo17                                                                                                                                                                                                                                       
+   *            main_48zzdo17                                                                                                                                                                                                                                       
    * -----------------------------------------------------------------------------                                                                                                                                                                                  
    */                                                                                                                                                                                                                                                               
-  static int main_44zzdo17(                                                                                                                                                                                                                                         
+  static int main_48zzdo17(                                                                                                                                                                                                                                         
     int qqzdummy, int a, int b)                                                                                                                                                                                                                                     
   {                                                                                                                                                                                                                                                                 
     /* Check for a new start */                                                                                                                                                                                                                                     
@@ -1834,11 +1723,11 @@ static int main_44zqendz(int qqqi)
     }                                                                                                                                                                                                                                                               
     if ( a )                                                                                                                                                                                                                                                        
     {                                                                                                                                                                                                                                                               
-      main_44zzqqzz(1-b);                                                                                                                                                                                                                                           
+      main_48zzqqzz(1-b);                                                                                                                                                                                                                                           
     }                                                                                                                                                                                                                                                               
     else                                                                                                                                                                                                                                                            
     {                                                                                                                                                                                                                                                               
-      main_44zzqqzz(-b);                                                                                                                                                                                                                                            
+      main_48zzqqzz(-b);                                                                                                                                                                                                                                            
     }                                                                                                                                                                                                                                                               
     if ( QQQfirstmcdc == 1)                                                                                                                                                                                                                                         
     {                                                                                                                                                                                                                                                               
@@ -1893,11 +1782,11 @@ static int main_44zqendz(int qqqi)
   {                                                                                                                                                                                                                                                                 
   if ( qqqzzglobflag == 1 || onoff == 1)                                                                                                                                                                                                                            
   {                                                                                                                                                                                                                                                                 
-    if ( main_44zzopen != 1 )                                                                                                                                                                                                                                       
+    if ( main_48zzopen != 1 )                                                                                                                                                                                                                                       
     {                                                                                                                                                                                                                                                               
-      main_44zqqzqz1();                                                                                                                                                                                                                                             
+      main_48zqqzqz1();                                                                                                                                                                                                                                             
     }                                                                                                                                                                                                                                                               
-    if ( main_44zzopen )                                                                                                                                                                                                                                            
+    if ( main_48zzopen )                                                                                                                                                                                                                                            
     {                                                                                                                                                                                                                                                               
       if ( qqqi > 0 )                                                                                                                                                                                                                                               
       {                                                                                                                                                                                                                                                             

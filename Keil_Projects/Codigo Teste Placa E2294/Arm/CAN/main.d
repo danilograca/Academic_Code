@@ -3,4 +3,4 @@
 .\main.o: ..\CAN\primitivetypes.h
 .\main.o: ..\CAN\init.h
 .\main.o: ..\CAN\global.h
-.\main.o: ..\CAN\LdraTest.h
+.\main.o: ldra_port.h

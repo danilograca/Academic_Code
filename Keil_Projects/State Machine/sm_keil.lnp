@@ -1,0 +1,9 @@
+--cpu ARM7TDMI
+".\startup.o"
+".\main.o"
+".\state_machine.o"
+".\led.o"
+--strict --scatter ".\sm_keil.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\sm_keil.map" -o .\sm_keil.axf

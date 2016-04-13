@@ -1,0 +1,9 @@
+Dependencies for Project 'sm_keil', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x55AF7D94)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips--pd "__UVISION_VERSION SETA 516"--list .\listings\startup.lst --xref -o .\ldra\startup.o --depend .\ldra\startup.d)
+F (.\main.c)(0x57083C58)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-D__UVISION_VERSION="516"-o .\ldra\main.o --depend .\ldra\main.d)
+I (state_machine.h)(0x56F2F90D)
+I (LED.h)(0x56F2F452)
+I (C:\Keil_v5\ARM\Inc\Philips\LPC22xx.H)(0x55AF7DA6)
+I (C:\Keil_v5\ARM\ARMCC_505u2\include\STDIO.h)(0x54C2D258)
+F (.\state_machine.c)(0x56F2F8E0)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-D__UVISION_VERSION="516"-o .\ldra\state_machine.o --depend .\ldra\state_machine.d)
+F (.\LED.c)(0x56F30987)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-D__UVISION_VERSION="516"-o .\ldra\led.o --depend .\ldra\led.d)

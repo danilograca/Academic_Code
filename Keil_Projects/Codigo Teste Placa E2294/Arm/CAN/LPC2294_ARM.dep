@@ -1,12 +1,12 @@
 Dependencies for Project 'LPC2294', Target 'ARM': (DO NOT MODIFY !)
-F (.\Startup.s)(0x4CA74656)(--cpu ARM7TDMI --pd "__RTX SETA 1" --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips--pd "__UVISION_VERSION SETA 516"--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
-F (.\global.c)(0x56D71722)(-c --cpu ARM7TDMI -D__RTX -D__EVAL -g -O0 --apcs=interwork -I..\CAN-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-D__UVISION_VERSION="516"-o .\global.o --omf_browse .\global.crf --depend .\global.d)
-F (.\main.c)(0x56F04ED4)(-c --cpu ARM7TDMI -D__RTX -D__EVAL -g -O0 --apcs=interwork -I..\CAN-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-D__UVISION_VERSION="516"-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+F (.\Startup.s)(0x4CA74656)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips--pd "__UVISION_VERSION SETA 516"--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\global.c)(0x56D71722)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I..\CAN-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-D__UVISION_VERSION="516" -D__CC_ARM-o .\global.o --omf_browse .\global.crf --depend .\global.d)
+F (.\main.c)(0x56F2CE06)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I..\CAN-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-D__UVISION_VERSION="516" -D__CC_ARM-o .\main.o --omf_browse .\main.crf --depend .\main.d)
 I (C:\Keil_v5\ARM\Inc\Philips\LPC22xx.H)(0x55AF7DA6)
 I (..\CAN\primitivetypes.h)(0x4C56F378)
 I (..\CAN\init.h)(0x56D71763)
 I (..\CAN\global.h)(0x56D7171E)
-I (..\CAN\LdraTest.h)(0x56C61C47)
-F (.\init.c)(0x56D717BA)(-c --cpu ARM7TDMI -D__RTX -D__EVAL -g -O0 --apcs=interwork -I..\CAN-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-D__UVISION_VERSION="516"-o .\init.o --omf_browse .\init.crf --depend .\init.d)
+I (ldra_port.h)(0x5332B546)
+F (.\init.c)(0x56D717BA)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I..\CAN-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\Philips-D__UVISION_VERSION="516" -D__CC_ARM-o .\init.o --omf_browse .\init.crf --depend .\init.d)
 I (C:\Keil_v5\ARM\Inc\Philips\LPC22xx.H)(0x55AF7DA6)
 I (..\CAN\global.h)(0x56D7171E)

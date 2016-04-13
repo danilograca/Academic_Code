@@ -1,0 +1,9 @@
+--cpu ARM7TDMI
+".\ldra\startup.o"
+".\ldra\main.o"
+".\ldra\state_machine.o"
+".\ldra\led.o"
+--strict --scatter ".\LDRA\sm_keil.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\sm_keil.map" -o .\LDRA\sm_keil.axf

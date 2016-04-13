@@ -3,7 +3,6 @@
 ".\global.o"
 ".\main.o"
 ".\init.o"
-C:\Keil_v5\ARM\RV31\LIB\RTX_ARM_LA.LIB
 --strict --scatter ".\LPC2294.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
