@@ -1,11 +1,8 @@
 /*
 C TESTBED VERSION  : 9.5.1
-FILE UNDER TEST  : "C:\_WorkSpace\Academic_Code\Keil_Projects\State Machine\LED.c"
-DATE OF ANALYSIS : Mon Apr 18 09:36:11 2016
+FILE UNDER TEST  : "C:\_WorkSpace\Academic_Code\Keil_Projects\State Machine\state_machine.c"
+DATE OF ANALYSIS : Mon Apr 18 09:36:09 2016
 */
-/*
- * Initialize LEDs
- */
 #undef QQQdialect 
 #undef QQQ146
 #undef QQQ148
@@ -25,7 +22,7 @@ DATE OF ANALYSIS : Mon Apr 18 09:36:11 2016
 #undef QQNEWBS
 #define qqqMaxBranchDepth     20
 #undef QQQstructbitmap
- static int zzfileid =     52;
+ static int zzfileid =     51;
 #undef QQQALGONE
 #undef QQQVCLFLG
 #undef QQQFORKFL
@@ -50,9 +47,9 @@ DATE OF ANALYSIS : Mon Apr 18 09:36:11 2016
 #define QQQseparate
 extern int QQQindicator;
 static int QQQfirstmcdc=1;
-#define LED_52zzopen                                                                                          zzopen
- extern int LED_52zzopen                                                                                        ;
-#define LED_52zqqzqz1                                                                                         zqqzqz1
+#define state_machine_51zzopen                                                                                zzopen
+ extern int state_machine_51zzopen                                                                              ;
+#define state_machine_51zqqzqz1                                                                               zqqzqz1
 #define QQQLDRA_PORT 
 #ifndef QQQLDRA_PORT                                                                                                                                                                                                                                                
 #define FILEPOINT FILE * f,                                                                                                                                                                                                                                         
@@ -399,48 +396,450 @@ char* ldra_sprintf4 (char* str, const char* format, const int d1, const int d2, 
   static void qqoutput4(FILEPOINT char * s, int i, int j, int k, int l);                                                                                                                                                                                            
   static void qqoutput0(FILEPOINT char * s);                                                                                                                                                                                                                        
   static int swzzqqzz (int qqqi, int onoff);                                                                                                                                                                                                                        
-extern int LED_52zqqzqz(qqnull_params);                                                                                                                                                                                                                             
-extern int LED_52zqqzqz1(qqnull_params);                                                                                                                                                                                                                            
-  static int LED_52zzqqzz (int qqqi);                                                                                                                                                                                                                               
-  static int LED_52zqendz (int qqqi);                                                                                                                                                                                                                               
-  static int LED_52zqzqzq (int qqqi) __attribute__((used));                                                                                                                                                                                                         
-  static int LED_52zzzqtz (int qqqa, int qqqb);                                                                                                                                                                                                                     
-  static int LED_52zzzqfz (int qqqa, int qqqb);                                                                                                                                                                                                                     
+extern int state_machine_51zqqzqz(qqnull_params);                                                                                                                                                                                                                   
+extern int state_machine_51zqqzqz1(qqnull_params);                                                                                                                                                                                                                  
+  static int state_machine_51zzqqzz (int qqqi);                                                                                                                                                                                                                     
+  static int state_machine_51zqendz (int qqqi);                                                                                                                                                                                                                     
+  static int state_machine_51zqzqzq (int qqqi) __attribute__((used));                                                                                                                                                                                               
+  static int state_machine_51zzzqtz (int qqqa, int qqqb);                                                                                                                                                                                                           
+  static int state_machine_51zzzqfz (int qqqa, int qqqb);                                                                                                                                                                                                           
   void qqqupload (qqnull_params);                                                                                                                                                                                                                                   
   static void upload_execution_history (void); /*Diogo*/                                                                                                                                                                                                            
 /* ------------------------------ END OF TESTBED PROTOTYPES -------------------------------- */                                                                                                                                                                     
                                                                                                                                                                                                                                                                     
  
-void
-  LED_Initialize ( void )
-  {
-   int iLED_52zzqqzz                                                                                        
- = LED_52zzqqzz                                                                                         (       1 ) ; /* 37 */
-    LED_52zqendz                                                                                         (       2 ) ; /* 30 */  
-  }
+unsigned int
+  b_On ;
+ 
+unsigned int
+  b_Fail ;
+ 
+unsigned int
+  b_Panel ;
+ 
+unsigned int
+  b_Shutdown ;
+ 
+unsigned int
+  b_Maintenance ;
+ 
+signed short
+  sshort_Position ;
+ 
+unsigned short
+  ushort_Mode ;
+ 
+unsigned short
+  ushort_Power ;
+ 
+unsigned short
+  ushort_State ;
+ 
+unsigned short
+  ushort_timeCount ;
 /*
- * Turn LED ON
+ * Variables Initialization of State Machine
  */
  
 void
-  LED_On ( void )
+  sm_init()
   {
-   int iLED_52zzqqzz                                                                                        
- = LED_52zzqqzz                                                                                         (       3 ) ; /* 37 */
-    LED_52zqendz                                                                                         (       4 ) ; /* 30 */  
+   int istate_machine_51zzqqzz                                                                              
+ = state_machine_51zzqqzz                                                                               (       1 ) ; /* 37 */
+    b_Fail = 0U ;
+    ushort_Mode = 0U ;
+    b_Panel = 0U ;
+    sshort_Position = 0U ;
+    ushort_State = 1U ;
+    ushort_Power = 0U ;
+    b_On = 0U ;
+    b_Maintenance = 0U ;
+    ushort_timeCount = 0U ;
+    b_Shutdown = 0U ;
+    state_machine_51zqendz                                                                               (       2 ) ; /* 30 */  
   }
 /*
- * Turn LED OFF
+ * State Machine Declaration
  */
  
 void
-  LED_Off ( void )
+  stateMachine()
   {
-   int iLED_52zzqqzz                                                                                        
- = LED_52zzqqzz                                                                                         (       5 ) ; /* 37 */
-    LED_52zqendz                                                                                         (       6 ) ; /* 30 */  
+   int istate_machine_51zzqqzz                                                                              
+ = state_machine_51zzqqzz                                                                               (       3 ) ; /* 37 */
+    if
+      (
+      ushort_State == 9U
+      )
+ {
+    state_machine_51zzqqzz                                                                               (      4 ) ; /* 1 */
+      {
+          /*EMERGENCY STATE*/
+        ushort_State = 1U ;
+          /*System on STANDBY*/
+        b_On = 0 ;
+      }
+    state_machine_51zzqqzz                                                                               (      5 ) ; /* 3 */
+ }
+    else
+ {                                                                                                    ;
+state_machine_51zzqqzz                                                                               (      6 ); /* 2 */
+      {
+        if
+          (
+          ushort_State == 7U
+          )
+ {
+    state_machine_51zzqqzz                                                                               (      7 ) ; /* 1 */
+          {
+            if
+              (
+              ushort_Mode == 2U
+              )
+ {
+    state_machine_51zzqqzz                                                                               (      8 ) ; /* 1 */
+              {
+                if
+                  (
+                  b_Fail == 1
+                  )
+ {
+    state_machine_51zzqqzz                                                                               (      9 ) ; /* 1 */
+                  {
+              // Mode EXTEND on REDUCED STATE
+                    sshort_Position += 1U ;
+                  }
+    state_machine_51zzqqzz                                                                               (     10 ) ; /* 3 */
+ }
+                else
+ {                                                                                                    ;
+state_machine_51zzqqzz                                                                               (     11 ); /* 2 */
+                  {
+                    sshort_Position += 2U ;
+                  }
+ }
+                if
+                  (
+                  sshort_Position > 20U
+                  )
+ {
+    state_machine_51zzqqzz                                                                               (     12 ) ; /* 1 */
+                  {
+              // Change to mode PANEL OPEN
+                    ushort_Mode = 3U ;
+                  }
+ }                                                                                                   
+else                                                                                                
+  state_machine_51zzqqzz                                                                               (     13 ) ; /* 4 */
+              }
+    state_machine_51zzqqzz                                                                               (     14 ) ; /* 3 */
+ }
+            else
+ {                                                                                                    ;
+state_machine_51zzqqzz                                                                               (     15 ); /* 2 */
+              {
+                if
+                  (
+                  ushort_Mode == 4U
+                  )
+ {
+    state_machine_51zzqqzz                                                                               (     16 ) ; /* 1 */
+                  {
+                    if
+                      (
+                      b_Fail == 1
+                      )
+ {
+    state_machine_51zzqqzz                                                                               (     17 ) ; /* 1 */
+                      {
+              // Mode RETRACT
+                        sshort_Position -= 1U ;
+                      }
+    state_machine_51zzqqzz                                                                               (     18 ) ; /* 3 */
+ }
+                    else
+ {                                                                                                    ;
+state_machine_51zzqqzz                                                                               (     19 ); /* 2 */
+                      {
+             // Mode RETRACT
+                        sshort_Position -= 2U ;
+                      }
+ }
+                    if
+                      (
+                      sshort_Position < 0
+                      )
+ {
+    state_machine_51zzqqzz                                                                               (     20 ) ; /* 1 */
+                      {
+              //*Change to mode PANEL CLOSE
+                        ushort_Mode = 1U ;
+                      }
+ }                                                                                                   
+else                                                                                                
+  state_machine_51zzqqzz                                                                               (     21 ) ; /* 4 */
+                  }
+    state_machine_51zzqqzz                                                                               (     22 ) ; /* 3 */
+ }
+                else
+ {                                                                                                    ;
+state_machine_51zzqqzz                                                                               (     23 ); /* 2 */
+                  {
+                    if
+                      (
+                      ushort_Mode == 1U
+                      )
+ {
+    state_machine_51zzqqzz                                                                               (     24 ) ; /* 1 */
+                      {
+            //* Mode PANEL CLOSE
+                        if
+                          (
+                          b_Panel == 1
+                          )
+ {
+    state_machine_51zzqqzz                                                                               (     25 ) ; /* 1 */
+                          {
+              //* Change to mode EXTEND
+                            ushort_Mode = 2U ;
+                          }
+ }                                                                                                   
+else                                                                                                
+  state_machine_51zzqqzz                                                                               (     26 ) ; /* 4 */
+                      }
+    state_machine_51zzqqzz                                                                               (     27 ) ; /* 3 */
+ }
+                    else
+ {                                                                                                    ;
+state_machine_51zzqqzz                                                                               (     28 ); /* 2 */
+                      {
+                        if
+                          (
+                          ushort_Mode == 3U
+                          )
+ {
+    state_machine_51zzqqzz                                                                               (     29 ) ; /* 1 */
+                          {
+            //*Mode PANEL OPEN
+                            if
+                              (
+                              b_Panel == 0
+                              )
+ {
+    state_machine_51zzqqzz                                                                               (     30 ) ; /* 1 */
+                              {
+              //*Change to mode RETRACT
+                                ushort_Mode = 4U ;
+                              }
+ }                                                                                                   
+else                                                                                                
+  state_machine_51zzqqzz                                                                               (     31 ) ; /* 4 */
+                          }
+    state_machine_51zzqqzz                                                                               (     32 ) ; /* 3 */
+ }
+                        else
+ {                                                                                                    ;
+state_machine_51zzqqzz                                                                               (     33 ); /* 2 */
+                          {
+            // Mode SAFE SHUTDOWN
+                            sshort_Position = 0U ;
+                          }
+ }
+                      }
+ }
+                  }
+ }
+              }
+ }
+          }
+    state_machine_51zzqqzz                                                                               (     34 ) ; /* 3 */
+ }
+        else
+ {                                                                                                    ;
+state_machine_51zzqqzz                                                                               (     35 ); /* 2 */
+          {
+            if
+              (
+              ushort_State == 1U
+              )
+ {
+    state_machine_51zzqqzz                                                                               (     36 ) ; /* 1 */
+              {
+                if
+                  (
+                  b_On == 1
+                  )
+ {
+    state_machine_51zzqqzz                                                                               (     37 ) ; /* 1 */
+                  {
+                  /*Change State to IBIT*/
+                    ushort_State = 2U ;
+                    ushort_timeCount = 0U ;
+                  }
+ }                                                                                                   
+else                                                                                                
+  state_machine_51zzqqzz                                                                               (     38 ) ; /* 4 */
+                if
+                  (
+                  b_Shutdown == 1
+                  )
+ {
+    state_machine_51zzqqzz                                                                               (     39 ) ; /* 1 */
+                  {
+                  }
+ }                                                                                                   
+else                                                                                                
+  state_machine_51zzqqzz                                                                               (     40 ) ; /* 4 */
+              }
+    state_machine_51zzqqzz                                                                               (     41 ) ; /* 3 */
+ }
+            else
+ {                                                                                                    ;
+state_machine_51zzqqzz                                                                               (     42 ); /* 2 */
+              {
+                if
+                  (
+                  ushort_State == 2U
+                  )
+ {
+    state_machine_51zzqqzz                                                                               (     43 ) ; /* 1 */
+                  {
+                    if
+                      (
+                      ushort_Power <= 200U
+                      )
+ {
+    state_machine_51zzqqzz                                                                               (     44 ) ; /* 1 */
+                      {
+                      /*Change State to EMERGENCY*/
+                        ushort_State = 9U ;
+                      }
+    state_machine_51zzqqzz                                                                               (     45 ) ; /* 3 */
+ }
+                    else
+ {                                                                                                    ;
+state_machine_51zzqqzz                                                                               (     46 ); /* 2 */
+                      {
+                        if
+                          (
+                          ushort_Power <= 500U
+                          )
+ {
+    state_machine_51zzqqzz                                                                               (     47 ) ; /* 1 */
+                          {
+                          /*Change State to FAIL*/
+                            ushort_State = 3U ;
+                          }
+    state_machine_51zzqqzz                                                                               (     48 ) ; /* 3 */
+ }
+                        else
+ {                                                                                                    ;
+state_machine_51zzqqzz                                                                               (     49 ); /* 2 */
+                          {
+                            ushort_timeCount ++ ;
+                            if
+                              (
+                              ushort_timeCount > 5U
+                              )
+ {
+    state_machine_51zzqqzz                                                                               (     50 ) ; /* 1 */
+                              {
+                              /*Change State to READY*/
+                                ushort_State = 4U ;
+                              }
+ }                                                                                                   
+else                                                                                                
+  state_machine_51zzqqzz                                                                               (     51 ) ; /* 4 */
+                          }
+ }
+                      }
+ }
+                  }
+    state_machine_51zzqqzz                                                                               (     52 ) ; /* 3 */
+ }
+                else
+ {                                                                                                    ;
+state_machine_51zzqqzz                                                                               (     53 ); /* 2 */
+                  {
+                    if
+                      (
+                      ushort_State == 3U
+                      )
+ {
+    state_machine_51zzqqzz                                                                               (     54 ) ; /* 1 */
+                      {
+                      /*Change State to OPERATIONAL REDUCED*/
+                        ushort_State = 7U ;
+                        ushort_Mode = 1U ;
+                        b_Fail = 1 ;
+                      }
+    state_machine_51zzqqzz                                                                               (     55 ) ; /* 3 */
+ }
+                    else
+ {                                                                                                    ;
+state_machine_51zzqqzz                                                                               (     56 ); /* 2 */
+                      {
+                        if
+                          (
+                          ushort_State == 4U
+                          )
+ {
+    state_machine_51zzqqzz                                                                               (     57 ) ; /* 1 */
+                          {
+                            if
+                              (
+                              b_Maintenance == 1
+                              )
+ {
+    state_machine_51zzqqzz                                                                               (     58 ) ; /* 1 */
+                              {
+                              /*Change State to MAINTENANCE*/
+                                ushort_State = 6U ;
+                              }
+    state_machine_51zzqqzz                                                                               (     59 ) ; /* 3 */
+ }
+                            else
+ {                                                                                                    ;
+state_machine_51zzqqzz                                                                               (     60 ); /* 2 */
+                              {
+                              /*Change State to Operational*/
+                                ushort_State = 7U ;
+                              }
+ }
+                          }
+    state_machine_51zzqqzz                                                                               (     61 ) ; /* 3 */
+ }
+                        else
+ {                                                                                                    ;
+state_machine_51zzqqzz                                                                               (     62 ); /* 2 */
+                          {
+                            if
+                              (
+                              ushort_State == 6U
+                              )
+ {
+    state_machine_51zzqqzz                                                                               (     63 ) ; /* 1 */
+                              {
+                              /*State MAINTENANCE*/
+                              }
+ }                                                                                                   
+else                                                                                                
+  state_machine_51zzqqzz                                                                               (     64 ) ; /* 4 */
+                          }
+ }
+                      }
+ }
+                  }
+ }
+              }
+ }
+          }
+ }
+      }
+ }
+    state_machine_51zqendz                                                                               (      65 ) ; /* 30 */  
   }
-#define qqqbranches      6
+#define qqqbranches     65
 #define QQQMAXMCDCSIZE      2
 #define ldra_sscanf                                                                                                                                                                                                                                                 
   /* put in undefs to protect our parameter names from macros */                                                                                                                                                                                                    
@@ -474,14 +873,14 @@ void
   extern short qqzzglobbrns[QQQnumfil];                                                                                                                                                                                                                             
   extern short qqzzglobfileid[QQQnumfil];                                                                                                                                                                                                                           
   extern int qqupload_registered;                                                                                                                                                                                                                                   
-  extern int LED_52zqqzqz(qqnull_params);                                                                                                                                                                                                                           
-  extern int LED_52zqqzqz1(qqnull_params);                                                                                                                                                                                                                          
+  extern int state_machine_51zqqzqz(qqnull_params);                                                                                                                                                                                                                 
+  extern int state_machine_51zqqzqz1(qqnull_params);                                                                                                                                                                                                                
                                                                                                                                                                                                                                                                     
   /* ----------- zscanf ---------------------------------------------------* 202 *                                                                                                                                                                                  
    *        Returns an integer extracted from a string                                                                                                                                                                                                              
    * -----------------------------------------------------------------------------                                                                                                                                                                                  
    */                                                                                                                                                                                                                                                               
-  static int LED_52zscanf(char * qqscan_str)                                                                                                                                                                                                                        
+  static int state_machine_51zscanf(char * qqscan_str)                                                                                                                                                                                                              
   {                                                                                                                                                                                                                                                                 
     int qqvalue;                                                                                                                                                                                                                                                    
     int qqisign;                                                                                                                                                                                                                                                    
@@ -613,16 +1012,16 @@ void
    * the execution history file and returns unity.                                                                                                                                                                                                                  
    * This routine is the primary routine for gathering                                                                                                                                                                                                              
    * the execution history. Note that the last entry                                                                                                                                                                                                                
-   * is usually inserted by LED_52zqzqzq.                                                                                                                                                                                                                           
+   * is usually inserted by state_machine_51zqzqzq.                                                                                                                                                                                                                 
    * -----------------------------------------------------------------------------                                                                                                                                                                                  
    */                                                                                                                                                                                                                                                               
-  static int LED_52zzqqzz(int qqqi)                                                                                                                                                                                                                                 
+  static int state_machine_51zzqqzz(int qqqi)                                                                                                                                                                                                                       
   {                                                                                                                                                                                                                                                                 
-    if ( LED_52zzopen != 1 )                                                                                                                                                                                                                                        
+    if ( state_machine_51zzopen != 1 )                                                                                                                                                                                                                              
     {                                                                                                                                                                                                                                                               
-      LED_52zqqzqz1();                                                                                                                                                                                                                                              
+      state_machine_51zqqzqz1();                                                                                                                                                                                                                                    
     }                                                                                                                                                                                                                                                               
-    if ( LED_52zzopen )                                                                                                                                                                                                                                             
+    if ( state_machine_51zzopen )                                                                                                                                                                                                                                   
     {                                                                                                                                                                                                                                                               
       /* bitmap */                                                                                                                                                                                                                                                  
       if ( qqqi > 0 )                                                                                                                                                                                                                                               
@@ -649,11 +1048,11 @@ void
    * module. It closes the execution history.                                                                                                                                                                                                                       
    * -----------------------------------------------------------------------------                                                                                                                                                                                  
    */                                                                                                                                                                                                                                                               
-  static int LED_52zqendz(int qqqi)                                                                                                                                                                                                                                 
+  static int state_machine_51zqendz(int qqqi)                                                                                                                                                                                                                       
   {                                                                                                                                                                                                                                                                 
-    if ( LED_52zzopen != 1 )                                                                                                                                                                                                                                        
+    if ( state_machine_51zzopen != 1 )                                                                                                                                                                                                                              
     {                                                                                                                                                                                                                                                               
-      LED_52zqqzqz1();                                                                                                                                                                                                                                              
+      state_machine_51zqqzqz1();                                                                                                                                                                                                                                    
     }                                                                                                                                                                                                                                                               
     /* ----------------------------------------------------------------------* 332 *                                                                                                                                                                                
      * this is the one which puts an integer into                                                                                                                                                                                                                   
@@ -662,7 +1061,7 @@ void
      * the number is right justified in this field.                                                                                                                                                                                                                 
      * -----------------------------------------------------------------------------                                                                                                                                                                                
      */                                                                                                                                                                                                                                                             
-    if ( LED_52zzopen )                                                                                                                                                                                                                                             
+    if ( state_machine_51zzopen )                                                                                                                                                                                                                                   
     {                                                                                                                                                                                                                                                               
       /* uncompressed */                                                                                                                                                                                                                                            
       /* uncompressed unbuffered */                                                                                                                                                                                                                                 
@@ -686,18 +1085,18 @@ void
    * terminates. It closes the execution history                                                                                                                                                                                                                    
    * -----------------------------------------------------------------------------                                                                                                                                                                                  
    */                                                                                                                                                                                                                                                               
-  static int LED_52zqzqzq(int qqqi)                                                                                                                                                                                                                                 
+  static int state_machine_51zqzqzq(int qqqi)                                                                                                                                                                                                                       
   {                                                                                                                                                                                                                                                                 
-    if ( LED_52zzopen != 1 )                                                                                                                                                                                                                                        
+    if ( state_machine_51zzopen != 1 )                                                                                                                                                                                                                              
     {                                                                                                                                                                                                                                                               
-      LED_52zqqzqz1();                                                                                                                                                                                                                                              
+      state_machine_51zqqzqz1();                                                                                                                                                                                                                                    
     }                                                                                                                                                                                                                                                               
     /* not compressed */                                                                                                                                                                                                                                            
     /* do nothing for bitmap*/                                                                                                                                                                                                                                      
     /* upload the history */                                                                                                                                                                                                                                        
     /* bitmap */                                                                                                                                                                                                                                                    
     /* uncompressed bitmap */                                                                                                                                                                                                                                       
-    LED_52zqendz(qqqi);                                                                                                                                                                                                                                             
+    state_machine_51zqendz(qqqi);                                                                                                                                                                                                                                   
     /* qqqupload closes the execution history file */                                                                                                                                                                                                               
     return(1);                                                                                                                                                                                                                                                      
   } /* end of zqzqzq */                                                                                                                                                                                                                                             
@@ -705,7 +1104,7 @@ void
   /*   the following routines should be left alone */                                                                                                                                                                                                               
                                                                                                                                                                                                                                                                     
   /* ----------------------------------------------------------------------* 354 *                                                                                                                                                                                  
-   *            LED_52zzzqtz                                                                                                                                                                                                                                        
+   *            state_machine_51zzzqtz                                                                                                                                                                                                                              
    * This routine captures the value of an expression                                                                                                                                                                                                               
    * and then returns a jump if the value is not 0.                                                                                                                                                                                                                 
    *                                                                                                                                                                                                                                                                
@@ -713,23 +1112,23 @@ void
    *   qqqb - jump table index.                                                                                                                                                                                                                                     
    * -----------------------------------------------------------------------------                                                                                                                                                                                  
    */                                                                                                                                                                                                                                                               
-  static int LED_52zzzqtz(int qqqa, int qqqb)                                                                                                                                                                                                                       
+  static int state_machine_51zzzqtz(int qqqa, int qqqb)                                                                                                                                                                                                             
   {                                                                                                                                                                                                                                                                 
     if (qqqa)                                                                                                                                                                                                                                                       
     {                                                                                                                                                                                                                                                               
-        LED_52zzqqzz(qqqb);                                                                                                                                                                                                                                         
+        state_machine_51zzqqzz(qqqb);                                                                                                                                                                                                                               
       }                                                                                                                                                                                                                                                             
       else                                                                                                                                                                                                                                                          
       {                                                                                                                                                                                                                                                             
         /* straight on jump */                                                                                                                                                                                                                                      
-        LED_52zzqqzz(qqqb-1);                                                                                                                                                                                                                                       
+        state_machine_51zzqqzz(qqqb-1);                                                                                                                                                                                                                             
       }                                                                                                                                                                                                                                                             
     return(qqqa);                                                                                                                                                                                                                                                   
   } /* end of zzzqtz */                                                                                                                                                                                                                                             
                                                                                                                                                                                                                                                                     
                                                                                                                                                                                                                                                                     
   /* ----------------------------------------------------------------------* 355 *                                                                                                                                                                                  
-   *            LED_52zzzqfz                                                                                                                                                                                                                                        
+   *            state_machine_51zzzqfz                                                                                                                                                                                                                              
    * This routine captures the value of an expression                                                                                                                                                                                                               
    * and then returns a jump if the value is 0.                                                                                                                                                                                                                     
    *                                                                                                                                                                                                                                                                
@@ -737,17 +1136,17 @@ void
    *  qqqb - jump table index.                                                                                                                                                                                                                                      
    * -----------------------------------------------------------------------------                                                                                                                                                                                  
    */                                                                                                                                                                                                                                                               
-  static int LED_52zzzqfz(int qqqa,int qqqb)                                                                                                                                                                                                                        
+  static int state_machine_51zzzqfz(int qqqa,int qqqb)                                                                                                                                                                                                              
   {                                                                                                                                                                                                                                                                 
     if (qqqa)                                                                                                                                                                                                                                                       
     {                                                                                                                                                                                                                                                               
       /* straight on jump */                                                                                                                                                                                                                                        
-      LED_52zzqqzz(qqqb-1);                                                                                                                                                                                                                                         
+      state_machine_51zzqqzz(qqqb-1);                                                                                                                                                                                                                               
       return(qqqa);                                                                                                                                                                                                                                                 
     }                                                                                                                                                                                                                                                               
     else                                                                                                                                                                                                                                                            
     {                                                                                                                                                                                                                                                               
-      LED_52zzqqzz(qqqb);                                                                                                                                                                                                                                           
+      state_machine_51zzqqzz(qqqb);                                                                                                                                                                                                                                 
     }                                                                                                                                                                                                                                                               
     return(qqqa);                                                                                                                                                                                                                                                   
   } /* end of zzzqfz */                                                                                                                                                                                                                                             
@@ -762,11 +1161,11 @@ void
   {                                                                                                                                                                                                                                                                 
   if ( qqqzzglobflag == 1 || onoff == 1)                                                                                                                                                                                                                            
   {                                                                                                                                                                                                                                                                 
-    if ( LED_52zzopen != 1 )                                                                                                                                                                                                                                        
+    if ( state_machine_51zzopen != 1 )                                                                                                                                                                                                                              
     {                                                                                                                                                                                                                                                               
-      LED_52zqqzqz1();                                                                                                                                                                                                                                              
+      state_machine_51zqqzqz1();                                                                                                                                                                                                                                    
     }                                                                                                                                                                                                                                                               
-    if ( LED_52zzopen )                                                                                                                                                                                                                                             
+    if ( state_machine_51zzopen )                                                                                                                                                                                                                                   
     {                                                                                                                                                                                                                                                               
       if ( qqqi > 0 )                                                                                                                                                                                                                                               
       {                                                                                                                                                                                                                                                             
